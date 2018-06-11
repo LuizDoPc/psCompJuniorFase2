@@ -7,22 +7,32 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 -- -----------------------------------------------------
 -- Schema mydb
 -- -----------------------------------------------------
+-- -----------------------------------------------------
+-- Schema pscompjuniorfase2
+-- -----------------------------------------------------
 
 -- -----------------------------------------------------
--- Schema mydb
+-- Schema pscompjuniorfase2
 -- -----------------------------------------------------
 CREATE SCHEMA IF NOT EXISTS `pscompjuniorfase2` DEFAULT CHARACTER SET utf8 ;
 USE `pscompjuniorfase2` ;
 
-CREATE TABLE IF NOT EXISTS `Estado` (
+-- -----------------------------------------------------
+-- Table `pscompjuniorfase2`.`estado`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `pscompjuniorfase2`.`estado` (
   `idEstado` INT(11) NOT NULL,
   `Nome` VARCHAR(75) NOT NULL,
   `UF` VARCHAR(5) NOT NULL,
   PRIMARY KEY (`idEstado`))
-ENGINE = InnoDB;
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
 
 
-CREATE TABLE IF NOT EXISTS `Cidade` (
+-- -----------------------------------------------------
+-- Table `pscompjuniorfase2`.`cidade`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `pscompjuniorfase2`.`cidade` (
   `idCidade` INT(11) NOT NULL,
   `Nome` VARCHAR(120) NOT NULL,
   `Estado_idEstado` INT(11) NOT NULL,
@@ -30,46 +40,51 @@ CREATE TABLE IF NOT EXISTS `Cidade` (
   INDEX `fk_Cidade_Estado1_idx` (`Estado_idEstado` ASC),
   CONSTRAINT `fk_Cidade_Estado1`
     FOREIGN KEY (`Estado_idEstado`)
-    REFERENCES `pscompjuniorfase2`.`Estado` (`idEstado`)
+    REFERENCES `pscompjuniorfase2`.`estado` (`idEstado`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
 
 
+-- -----------------------------------------------------
+-- Table `pscompjuniorfase2`.`participantes`
+-- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `pscompjuniorfase2`.`participantes` (
-  `cpf` VARCHAR(14) NOT NULL,
-  `nome` VARCHAR(100) NOT NULL,
-  `sexo` CHAR(1) NOT NULL,
-  `ufrg` CHAR(2) NOT NULL,
-  `rg` VARCHAR(10) NOT NULL,
-  `email` VARCHAR(100) NOT NULL,
-  `telefone` VARCHAR(15) NOT NULL,
-  `nascimento` DATE NOT NULL,
-  `logradouro` VARCHAR(100) NOT NULL,
-  `numero` VARCHAR(10) NOT NULL,
-  `bairro` VARCHAR(100) NOT NULL,
-  `complemento` VARCHAR(45) NOT NULL,
-  `cep` VARCHAR(10) NOT NULL,
-  `ìnscrito` TINYINT NOT NULL,
-  `idEstado` INT NOT NULL,
-  `idCidade` INT NOT NULL,
-  PRIMARY KEY (`cpf`),
-  UNIQUE INDEX `cpf_UNIQUE` (`cpf` ASC),
-  UNIQUE INDEX `rg_UNIQUE` (`rg` ASC),
-  UNIQUE INDEX `email_UNIQUE` (`email` ASC),
+  `CPF` VARCHAR(14) NOT NULL,
+  `Nome` VARCHAR(100) NOT NULL,
+  `Sexo` CHAR(1) NOT NULL,
+  `ufRG` CHAR(2) NOT NULL,
+  `RG` VARCHAR(10) NOT NULL,
+  `Email` VARCHAR(100) NOT NULL,
+  `Telefone` VARCHAR(15) NOT NULL,
+  `Nascimento` DATE NOT NULL,
+  `Logradouro` VARCHAR(100) NOT NULL,
+  `Numero` VARCHAR(10) NOT NULL,
+  `Bairro` VARCHAR(100) NOT NULL,
+  `Complemento` VARCHAR(45) NOT NULL,
+  `CEP` VARCHAR(10) NOT NULL,
+  `Inscrito` TINYINT NOT NULL,
+  `idEstado` INT(11) NOT NULL,
+  `idCidade` INT(11) NOT NULL,
+  PRIMARY KEY (`CPF`),
+  UNIQUE INDEX `cpf_UNIQUE` (`CPF` ASC),
+  UNIQUE INDEX `rg_UNIQUE` (`RG` ASC),
+  UNIQUE INDEX `email_UNIQUE` (`Email` ASC),
   INDEX `fk_participantes_estado1_idx` (`idEstado` ASC),
   INDEX `fk_participantes_cidade1_idx` (`idCidade` ASC),
-  CONSTRAINT `fk_participantes_estado1`
-    FOREIGN KEY (`idEstado`)
-    REFERENCES `pscompjuniorfase2`.`Estado` (`idEstado`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
   CONSTRAINT `fk_participantes_cidade1`
     FOREIGN KEY (`idCidade`)
-    REFERENCES `pscompjuniorfase2`.`Cidade` (`idCidade`)
+    REFERENCES `pscompjuniorfase2`.`cidade` (`idCidade`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_participantes_estado1`
+    FOREIGN KEY (`idEstado`)
+    REFERENCES `pscompjuniorfase2`.`estado` (`idEstado`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
 
 
 SET SQL_MODE=@OLD_SQL_MODE;
