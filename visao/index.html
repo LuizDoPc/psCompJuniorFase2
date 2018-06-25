@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<title>Posse Trainees 2018/1</title>
-	<link rel="icon" href="assets/images/favicon.jpeg" sizes="16x16" type="image/jpeg">
+	<link rel="icon" href="assets/images/favicon.png" sizes="16x16" type="image/jpeg">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="assets/css/ProjCSS.css">
@@ -24,21 +24,39 @@
 	<div class="collapse navbar-collapse" id="navbarNav">
 		<ul class="nav nav-pills navbar-nav">
 			<li class="nav-item">
-				<a class="nav-link font" href="#sobre">Sobre</a>
+				<a class="nav-link" href="#sobre">Sobre</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link font" href="#palestrantes">Palestrantes</a>
+				<a class="nav-link" href="#palestrantes">Palestrantes</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link font" href="#organizadores">Organizadores</a>
+				<a class="nav-link" href="#organizadores">Organizadores</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link font" href="#localizacao">Localização</a>
+				<a class="nav-link" href="#localizacao">Localização</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link font" href="#login">Log-in/Sign-in</a>
+				<a class="nav-link" href="#cadastro">Cadastro</a>
 			</li>
 		</ul>
+
+		<div class="navLog" style="padding-top: 10px;">
+			<form>
+				<div class="row">
+					<div style="padding-top: 1.3%; padding-left: 4.5em; font-size: 0.9em">Já está cadastrado?</div>
+	  				<div class="form-group col">
+	    				<input type="text" class="form-control" style="line-height: 1em!important;" id="formGroupExampleInput" placeholder="E-mail">
+					</div>
+					<div class="form-group col">
+	    				<input type="password" class="form-control" style="line-height: 1em!important;" id="formGroupExampleInput" placeholder="Senha">
+					</div>
+					<div>
+						<button type="submit" class="btn btn-primary">Entrar</button>
+					</div>
+				</div>
+			</form>
+		</div>
+
 	</div>
 </nav>
 <div data-spy="scroll" data-target="#navbar" data-offset="0">
@@ -84,52 +102,53 @@
 
 <!--Sobre-->
 <section id="sobre">
-	<div class="fundo-sobre">
-		<p class="titulo-sobre">Sobre</p>
-		<p class="texto-sobre">Lorem ipsum dolor sit amet, <a href="http://compjunior.com.br" target="_blank">Comp Júnior</a>. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-		</div>
+	<p class="titulo-sobre">Sobre</p>
+	<p class="texto-sobre container">Lorem ipsum dolor sit amet, <a href="http://compjunior.com.br" target="_blank">Comp Júnior</a>. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
 </section>
 
 <!--Palestrantes-->
 <section id="palestrantes" class="container-fluid">
-	<div id="titlePalestrantes" class="col-12">
+	<p id="titlePalestrantes" class="col-12">
 		Palestrantes
-	</div>
+	</p>
+	<p class="orientacaoPal">
+		Clique ou passe o cursor sobre as imagens para ver mais informações sobre os Palestrantes
+	</p>
 	<div class="row">
 		<div id="colPalestrantes" class="col-sm-12 col-md-4 row">
 			<div class="col-xl-12 cont">
 				<img src="assets/images/miranha.jpeg" class="imgPalestrantes" align="center">
-				<div class="overlay imgPalestrantes">
-				    <div class="text font">singaro da cãrse</div>
+				<div class="overlay imgPalestrantes" align="center">
+				    <p class="text">singaro da cãrse</p>
   				</div>
 			</div>
-			<div class="txtPalestrantes col-12">
+			<p class="txtPalestrantes col-12">
 				Miranha
-			</div>
+			</p>
 		</div>
 
 		<div id="colPalestrantes" class="col-sm-12 col-md-4 row">
 			<div class="col-xl-12 cont">
 				<img src="assets/images/homem_de_lata.jpg" class="imgPalestrantes">
-				<div class="overlay imgPalestrantes">
-				    <div class="text font">Gênio, bilionário, playboy e filantropo.</div>
+				<div class="overlay imgPalestrantes" align="center">
+				    <p class="text">Gênio, bilionário, playboy e filantropo.</p>
   				</div>
 			</div>
-			<div class="txtPalestrantes col-12">
+			<p class="txtPalestrantes col-12">
 				Homi de Lata
-			</div>
+			</p>
 		</div>
 
 		<div id="colPalestrantes" class="col-sm-12 col-md-4 row">
-			<div class="col-xl-12 cont" style="">
+			<div class="col-xl-12 cont">
 				<img src="assets/images/capitao_referencia.jpg" class="imgPalestrantes">
-				<div class="overlay imgPalestrantes">
-				    <div class="text font">Eu entendi a referência</div>
+				<div class="overlay imgPalestrantes" align="center">
+				    <p class="text">Eu entendi a referência</p>
   				</div>
 			</div>
-			<div class="txtPalestrantes col-12">
+			<p class="txtPalestrantes col-12">
 				Capitão Referência
-			</div>
+			</p>
 		</div>
 
 	</div>
@@ -146,13 +165,13 @@
     <div class="col-xl-12">
       <img src="assets/images/organizadores1.png" class="imgOrganizadores">
     </div>
-    <div class="txtOrganizadores font col-12">
+    <div class="txtOrganizadores col-12">
       Kakashi Hatake
     </div>
     <div class="social">
-      <a href="https://www.facebook.com/narutoofficialsns/?ref=br_rs" target="_blank"><img src="assets/images/icon1.svg" class="socialIcon"></a>
-      <a href=""><img src="assets/images/icon2.svg" class="socialIcon"></a>
-      <a href=""><img src="assets/images/icon3.svg" class="socialIcon"></a>
+      <a href="https://www.facebook.com/narutoofficialsns/?ref=br_rs" target="_blank"><img src="assets/images/icon1 (2).svg" class="socialIcon"></a>
+      <a href=""><img src="assets/images/icon2 (2).svg" class="socialIcon"></a>
+      <a href=""><img src="assets/images/icon3 (2).svg" class="socialIcon"></a>
     </div>
   </div>
 
@@ -160,13 +179,13 @@
       <div class="col-xl-12">
          <img src="assets/images/organizadores2.jpg" class="imgOrganizadores">
       </div>
-      <div class="txtOrganizadores font col-12">
+      <div class="txtOrganizadores col-12">
         Yatogami
       </div>
       <div class="social">
-        <a href="https://www.facebook.com/Noragami.TV/?ref=br_rs" target="_blank"><img src="assets/images/icon1.svg" class="socialIcon"></a>
-        <a href=""><img src="assets/images/icon2.svg" class="socialIcon"></a>
-        <a href=""><img src="assets/images/icon3.svg" class="socialIcon"></a>
+        <a href="https://www.facebook.com/Noragami.TV/?ref=br_rs" target="_blank"><img src="assets/images/icon1 (2).svg" class="socialIcon"></a>
+        <a href=""><img src="assets/images/icon2 (2).svg" class="socialIcon"></a>
+        <a href=""><img src="assets/images/icon3 (2).svg" class="socialIcon"></a>
     </div>
   </div>
 
@@ -177,13 +196,13 @@
       <div class="col-xl-12">
         <img src="assets/images/organizadores3.jpg" class="imgOrganizadores">
       </div>
-      <div class="txtOrganizadores font col-12">
+      <div class="txtOrganizadores col-12">
         Edward Elric
       </div>
       <div class="social">
-        <a href="https://www.facebook.com/FMAHiromuArakawa/?ref=br_rs" target="_blank"><img src="assets/images/icon1.svg" class="socialIcon"></a>
-        <a href=""><img src="assets/images/icon2.svg" class="socialIcon"></a>
-        <a href=""><img src="assets/images/icon3.svg" class="socialIcon"></a>
+        <a href="https://www.facebook.com/FMAHiromuArakawa/?ref=br_rs" target="_blank"><img src="assets/images/icon1 (2).svg" class="socialIcon"></a>
+        <a href=""><img src="assets/images/icon2 (2).svg" class="socialIcon"></a>
+        <a href=""><img src="assets/images/icon3 (2).svg" class="socialIcon"></a>
       </div>
     </div>
 
@@ -191,13 +210,13 @@
       <div class="col-xl-12">
         <img src="assets/images/organizadores4.jpg" class="imgOrganizadores">
       </div>
-      <div class="txtOrganizadores font col-12">
+      <div class="txtOrganizadores col-12">
         Saitama God
       </div>
       <div class="social">
-        <a href="https://www.facebook.com/OnePunchMan.GB/?ref=br_rs" target="_blank"><img src="assets/images/icon1.svg" class="socialIcon"></a>
-        <a href=""><img src="assets/images/icon2.svg" class="socialIcon"></a>
-        <a href=""><img src="assets/images/icon3.svg" class="socialIcon"></a>
+        <a href="https://www.facebook.com/OnePunchMan.GB/?ref=br_rs" target="_blank"><img src="assets/images/icon1 (2).svg" class="socialIcon"></a>
+        <a href=""><img src="assets/images/icon2 (2).svg" class="socialIcon"></a>
+        <a href=""><img src="assets/images/icon3 (2).svg" class="socialIcon"></a>
       </div>
     </div>
 
@@ -205,13 +224,13 @@
       <div class="col-xl-12">
         <img src="assets/images/organizadores5.jpg" class="imgOrganizadores">
       </div>
-      <div class="txtOrganizadores font col-12">
+      <div class="txtOrganizadores col-12">
         Son Goku
       </div>
       <div class="social">
-        <a href="https://www.facebook.com/DragonBallZ/?ref=br_rs" target="_blank"><img src="assets/images/icon1.svg" class="socialIcon"></a>
-        <a href=""><img src="assets/images/icon2.svg" class="socialIcon"></a>
-        <a href=""><img src="assets/images/icon3.svg" class="socialIcon"></a>
+        <a href="https://www.facebook.com/DragonBallZ/?ref=br_rs" target="_blank"><img src="assets/images/icon1 (2).svg" class="socialIcon"></a>
+        <a href=""><img src="assets/images/icon2 (2).svg" class="socialIcon"></a>
+        <a href=""><img src="assets/images/icon3 (2).svg" class="socialIcon"></a>
       </div>
     </div>
 
@@ -219,104 +238,151 @@
 </section>
 
 <!--Localização-->
-<section id="localizacao">
-	
+<section id="localizacao" class="container-fluid">
+		<div id="titleLocalizaçao" class="col-12">
+			Localização
+		</div>
+		<div class="txtLocalização col-xl-12">
+			Essas sao as coordenadas para chegar ao <a href="http://dcc.ufla.br">Departamento de Ciência da Computação</a>:
+		</div>
+		<div id="myMap" class="col-md-6 col-sm-12"></div>
+
 </section>
 
 <!--Log-in/Sign-in-->
-<section id="loginSignin">
-	<div class="row">
-		<div id="registro" class="col-xl-6 col-sm-12">
-			<p class="titleOrganizadores" style="font-size: 3em; text-align: center;">Registre-se!</p>
-			<form class="topicos" style="margin-left: 2em;"><strong>
-				Nome completo:<br>
-				<input type="text" name="Nome" placeholder="ex.: Maria da Silva"><br><br>
+<section id="cadastro">
+	<p class="titleCadastro">Cadastre-se!</p>
+	<form class="container">
 
-				E-mail:<br>
-				<input type="email" name="Email" placeholder="ex.: usuario@compjunior.com"><br><br>
+		<div class="form-group">
+    		<label class="topicos" for="formGroupExampleInput">Nome:</label>
+    		<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Maria da Silva">
+  		</div>
 
-				CPF:<br>
-				<input type="text" name="CPF" placeholder="ex.: 123456789-12"><br>
-				RG:<br>
-				UF:
-				<select name="ufRG">
-					<option value="AC">AC</option>
-					<option value="AL">AL</option>
-					<option value="AP">AP</option>
-					<option value="AM">AM</option>
-					<option value="BA">BA</option>
-					<option value="CE">CE</option>
-					<option value="DF">DF</option>
-					<option value="ES">ES</option>
-					<option value="GO">GO</option>
-					<option value="MA">MA</option>
-					<option value="MT">MT</option>
-					<option value="MS">MS</option>
-					<option value="MG">MG</option>
-					<option value="PA">PA</option>
-					<option value="PB">PB</option>
-					<option value="PR">PR</option>
-					<option value="PE">PE</option>
-					<option value="PI">PI</option>
-					<option value="RJ">RJ</option>
-					<option value="RN">RN</option>
-					<option value="RS">RS</option>
-					<option value="RO">RO</option>
-					<option value="RR">RR</option>
-					<option value="SC">SC</option>
-					<option value="SP">SP</option>
-					<option value="SE">SE</option>
-					<option value="TO">TO</option>
-				</select>
-					<input type="text" name="RG" placeholder="ex.: 12-345.678"><br><br>
-
-				Gênero:<br>
-				  	<input type="radio" name="genero" value="masculino" checked> Masculino<br>
-  					<input type="radio" name="genero" value="feminino"> Feminino<br>
-  					<input type="radio" name="genero" value="outro"> Outro<br><br>
-
-  				Data de Nascimento:<br>
-				<input type="date" name="Nascimento" placeholder="dd/mm/aaaa"><br><br>
-
-				Endereço:<br>
-				<input type="text" name="Logradouro" placeholder="ex.: Rua dos Alfineiros"><br>
-				Número:<br>
-				<input type="text" name="Numero" placeholder="ex.: 399"><br>
-				Bairro:<br>
-				<input type="text" name="Bairro" placeholder="ex.: Centro"><br>
-				Complemento:<br>
-				<input type="text" name="Complemento" placeholder="ex.: apto. 103"><br>
-				Telefone:<br>
-				<input type="tel" name="telefone" placeholder="(DDD) número"><br>
-				Cidade:<br>
-				<input type="text" name="Cidade" placeholder="ex.: Lavras"><br>
-				CEP:<br>
-				<input type="text" name="CEP" placeholder="ex.: 12345-678"><br><br>
-
-				<input type="submit" value="Cadastrar"><br><br>
-			</form>
-		
+  		<div class="row">
+	  		<div class="form-group col">
+	    		<label class="topicos" for="formGroupExampleInput">Email:</label>
+	    		<input type="text" class="form-control" id="formGroupExampleInput" placeholder="nome@exemplo.com">
+			</div>
+			<div class="form-group col">
+	    		<label class="topicos" for="formGroupExampleInput">Senha:</label>
+	    		<input type="password" class="form-control" id="formGroupExampleInput" placeholder="Insira sua Senha aqui">
+			</div>
 		</div>
-		</strong>
-		<div id="login" class="col-xl-6 col-sm-12">
-			<p class="titleOrganizadores" style="font-size: 2em; text-align: center;">Já tem conta? <br>Faça seu Log-in!</p>
-			<form class="topicos" style="font-size: 1.4em; text-align: center;">
-				E-mail:<br>
-				<input type="email" name="emailCadastrado" placeholder="Insira seu e-mail aqui"><br>
-				Senha:<br>
-				<input type="password" name="senha" placeholder="Insira sua senha aqui"><br><br>
-				<input type="submit" value="Entrar"><br><br>
-			</form>
 
+		<div class="row">
+			<div class="form-group col">
+	    		<label class="topicos" for="inputState">Sexo</label>
+	    		<select id="inputState" class="form-control">
+	    			<option selected>---</option>
+	    			<option>Feminino</option>
+	    			<option>Masculino</option>
+	    			<option>Outro</option>
+	    		</select>
+	    	</div>
+		    <div class="form-group col">
+	    		<label class="topicos" for="formGroupExampleInput">CPF</label>
+	    		<input type="text" class="form-control" id="formGroupExampleInput" placeholder="123.456.789-12">
+	  		</div>
+    	</div>
+
+    	<div class="row">
+    		<div class="form-group col-6">
+	    		<label class="topicos" for="formGroupExampleInput">CPF</label>
+	    		<input type="text" class="form-control" id="formGroupExampleInput" placeholder="123.456.789-12">
+	  		</div>
+    		<div class="form-group col-2">
+	    		<label class="topicos" for="inputState">UF</label>
+	    		<select id="inputState" class="form-control">
+	    			<option selected>---</option>
+	    			<option>AC</option>
+	    			<option>AL</option>
+	    			<option>AP</option>
+	    			<option>AM</option>
+	    			<option>BA</option>
+	    			<option>CE</option>
+	    			<option>DF</option>
+	    			<option>ES</option>
+	    			<option>GO</option>
+	    			<option>MA</option>
+	    			<option>MT</option>
+	    			<option>MS</option>
+	    			<option>MG</option>
+	    			<option>PA</option>
+	    			<option>PB</option>
+	    			<option>PR</option>
+	    			<option>PR</option>
+	    			<option>PE</option>
+	    			<option>PI</option>
+	    			<option>RJ</option>
+	    			<option>RN</option>
+	    			<option>RS</option>
+	    			<option>RO</option>
+	    			<option>RR</option>
+	    			<option>SC</option>
+	    			<option>SP</option>
+	    			<option>SE</option>
+	    			<option>TO</option>
+	    			
+	    		</select>
+	    	</div>
+	  		<div class="form-group col-4">
+	    		<label class="topicos" for="formGroupExampleInput">RG</label>
+	    		<input type="text" class="form-control" id="formGroupExampleInput" placeholder="12.345.678">
+	  		</div>
+    	</div>
+
+    	<div class="row">
+	  		<div class="form-group col">
+	    		<label class="topicos" for="formGroupExampleInput">Telefone:</label>
+	    		<input type="text" class="form-control" id="formGroupExampleInput" placeholder="(DDD) (9) 1234-5678">
+			</div>
+			<div class="form-group col">
+	    		<label class="topicos" for="formGroupExampleInput">CEP:</label>
+	    		<input type="text" class="form-control" id="formGroupExampleInput" placeholder="12.345-678">
+			</div>
 		</div>
-	</div>
+		<div class="row">
+			<div class="form-group col-2">
+	    		<label class="topicos" for="formGroupExampleInput">Cidade:</label>
+	    		<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Lavras">
+	  		</div>
+			<div class="form-group col-4">
+	    		<label class="topicos" for="formGroupExampleInput">Endereço:</label>
+	    		<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Rua dos Alfineiros">
+	  		</div>
+	  		<div class="form-group col-2">
+	    		<label class="topicos" for="formGroupExampleInput">Número:</label>
+	    		<input type="text" class="form-control" id="formGroupExampleInput" placeholder="4">
+	  		</div>
+	  		<div class="form-group col-2">
+	    		<label class="topicos" for="formGroupExampleInput">Complemento:</label>
+	    		<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Apto. 201">
+	  		</div>
+	  		<div class="form-group col-2">
+	    		<label class="topicos" for="formGroupExampleInput">Bairro:</label>
+	    		<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Centro">
+	  		</div>
+  		</div>
+  			<button type="submit" class="btn btn-primary" style="margin-bottom: 10px;">Cadastrar</button>
+	</form>
 </section>
+<!--RODAPÉ-->
+<section id="rodape">
+	<div align="center" style="color: #FFD444">Nossos Patrocinadores</div>
+	<div class="row">
+		<img src="assets/images/patrocinador1.png" class="logoPatrocinador">
+		<img src="assets/images/patrocinador2.png" class="logoPatrocinador">
+		<img src="assets/images/patrocinador3.png" class="logoPatrocinador">
+	</div>
 
+</section>
 
 </div>
 	<script type="text/javascript" src="assets/js/ProjetoJS.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFGgg96Aqzg5EzE4Du-PqDAwJ5vASzQvg&callback=myMap"></script>
 </body>
 </html>
