@@ -2,19 +2,22 @@
   font-family: "Moon 2.0 Regular";
   src: url(../fonts/Moon2.0-Regular.otf);
 }
-.font{
-    font-family: "Moon 2.0 Regular";
-}
-/* Navbar */
-body {
+body{
   position: relative; 
+  font-family: "Moon 2.0 Regular";
 }
+div{
+  font-family: "Moon 2.0 Regular"; 
+}
+
+/* Navbar */
 #navbar {
   background-color: #0F0A0A;
-  opacity: 0.98;
+  opacity: 0.95;
 }
 .nav {
   color: #009688;
+  font-size: 0.8em;
 }
 .nav-pills > li > a.active {
   background-color: #F8F32B!important;
@@ -22,6 +25,10 @@ body {
 }
 .nav-pills > li > a:hover{
   background-color: #FFD444!important;
+  opacity: 0.90;
+}
+.nav-item > a {
+  color: #FFD444!important;
   opacity: 0.90;
 }
 .nav-item > a:hover{
@@ -32,12 +39,14 @@ body {
   color: #0f0a0a!important;
   opacity: 0.90;
 }
-.nav-item > a {
-  color: #FFD444!important;
-  opacity: 0.90;
-}
+
 button.navbar-toggler {
   background-color: #FFD444!important;
+}
+.navLog{
+  color: white;
+  font-size: 1em;
+  margin-left: 10px;
 }
 
 /* NavBar FIM */
@@ -62,7 +71,6 @@ section.container-fluid{
   }
 
   .slide-text{
-    font-family: "Moon 2.0 Regular";
     font-size: 3em;
   }
   
@@ -81,44 +89,42 @@ section.container-fluid{
 
 /* Sobre */
 #sobre {
-height: 100%;
-}
-
-.fundo-sobre{
-  background-color:#FFD444;
+  background-color: #2A565C;
   height: 100%;
   width: 100%;
+  padding-bottom: 0.5em;
 }
 
+
 .titulo-sobre{
-  font-family: "Moon 2.0 Regular";
   font-size: 4.5em;
   text-align: center;
   padding-top: 1em;
+  color: #f1f2eb;
 }
 
 .texto-sobre{
-  font-family: "Moon 2.0 Regular";
+  
   font-size: 2em;
   text-align: center;
   padding-left: 2em;
   padding-right: 2em;
   padding-bottom: 1em;
+  color: #f1f2eb;
 }
 
 /* Sobre FIM */
 
 /* Palestrantes */
 #palestrantes{
-  background-color: #2A565C;
+  background-color: #FFD444;
   height: 100%;
   padding-bottom: 2em;
 }
 #titlePalestrantes{
-  font-family: "Moon 2.0 Regular"; 
   text-align: center;
   font-size: 4.5em;
-  color: #F5EFED;
+  color: #0F0A0A;
   padding-top: 0.1em;
 }
 #colPalestrantes {
@@ -126,21 +132,24 @@ height: 100%;
   font-size: 2.5em;
   margin-left: auto;
   margin-right: auto;
-  color: #F5EFED;
+  color: #0F0A0A;
+}
+.orientacaoPal{
+  text-align: center;
+  color: #0F0A0A; 
 }
 .imgPalestrantes{
   width: 9em;
   height: 9em;
-  border-radius: 50%;
+  border-radius: 10%;
   border: solid;
   border-width: 5px;
-  border-color: #F5EFED;
+  border-color: #0F0A0A;
   margin-top: 10%;
   object-fit: cover;
 }
 
 .txtPalestrantes {
-  font-family: "Moon 2.0 Regular";
   padding-top: 6%;
   text-align: center;
 }
@@ -157,18 +166,20 @@ height: 100%;
 }
 
 .overlay {
-  position: absolute;
-  top: 10;
-  bottom: 0;
-  left: 7%;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #000000;
+    position: absolute;
+    height: 14em;
+    width: 14em ;
+    opacity: 0;
+    top: 0;
+    bottom: 0 !important;
+    left: 0;
+    right: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    margin-right: auto;
+    margin-left: auto;
+    bottom: 0%;
 }
-
 .cont:hover .overlay {
   opacity: 1;
 }
@@ -189,12 +200,11 @@ height: 100%;
 /* Organizadores */
 
 #organizadores{
-  background-color: #e5f77d;
+  background-color: #0b3c5d;
   height: auto;
   padding-bottom: 2em;
 }
 #titleOrganizadores{
-  font-family: "Moon 2.0 Regular"; 
   text-align: center;
   font-size: 4em;
   color: #0F0A0A;
@@ -217,9 +227,6 @@ height: 100%;
   margin-top: 10%;
   object-fit: cover;
 }
-.txtOrganizadores{
-  font-family: "Moon 2.0 Regular";
-}
 .social{
   margin: auto;
 }
@@ -229,36 +236,73 @@ height: 100%;
   margin-left: 5px;
 }
 .socialIcon:hover{
-  filter:drop-shadow(2px 2px 3px gray);
+  filter: drop-shadow(2px 2px 3px black);
 }
 /* Organizadores FIM */
 
 /* Localização */
 #localizacao {
-  background-color: #009688;
-  height: 100vh;
+  background-color: #7c9eb2;
+  height:auto;
   width: 100%;
+  padding-bottom: 1em;
+}
+
+div#localizacao a{
+color: red;
+}
+
+#titleLocalizaçao {
+  text-align: center;
+  font-size: 4em;
+  color: #0F0A0A;
+}
+#myMap {
+  margin-left: auto;
+  margin-right: auto;
+  width: 95% !important;
+  height: 24em;
+}
+.txtLocalização{
+  color: #0F0A0A;
+  font-size: 1.5em;
+  text-align: center;
+  padding-bottom: 0.5em;
 }
 /* Localização FIM */
 
 /* Log-in/Sign-in */
 #loginSignin {
-  background-color: #59C3C3;
+  background-color: #eaebef;
   height: auto;
   width: 100vw;
   padding-bottom: 2em;
 }
-#registro{
-  font-family: "Moon 2.0 Regular";
-}
-#login{
-  font-family: "Moon 2.0 Regular";
+.titleCadastro{
+  text-align: center;
+  font-size: 4em;
+  padding-top: 0.7em;
+  color: #0F0A0A;
 }
 .topicos{
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
-
 /* Log-in/Sign-in FIM */
+
+/* Rodapé/Patrocinadores */
+#rodape{
+  background-color: #0F0A0A ;
+  height: auto;
+}
+.logoPatrocinador{
+  width: auto;
+  height: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+/* Rodapé/Patrocinadores FIM */
 
 /*  Media Queries */
 @media(max-width: 2560px){
@@ -273,13 +317,12 @@ height: 100%;
   }
   .nav-item > a{
     font-size: 3em;
-    margin-left: 2em;
-    margin-right: 2em;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .comp-icon{
     height: 6em;
   }
-
 
   #titlePalestrantes{
     font-size: 7em;
@@ -292,11 +335,9 @@ height: 100%;
   .txtPalestrantes{
     font-size: 2em;
   }
-  .overlay{
-    left: 16%;
-  }
   #titleOrganizadores{
     font-size: 7em;
+    color: #f1f2eb;
   }
   .imgOrganizadores{
   width: 13em;
@@ -305,11 +346,13 @@ height: 100%;
   }
   .txtOrganizadores{
     font-size: 2em;
+    color: #f1f2eb;
   }
 
   .socialIcon{
   height: 1.7em;
   width: 1.7em;
+  color: #f1f2eb;
   margin-left: 10px;
   }
   .imgOrganizadores{
@@ -318,16 +361,16 @@ height: 100%;
   border-radius: 50%;
   border: solid;
   border-width: 10px;
-  border-color: #0F0A0A;
+  border-color: #f1f2eb;
   margin-top: 10%;
   object-fit: cover;
   }
 }
-@media(max-width: 1800px){
+@media(max-width: 2000px){
   .nav-item > a{
     margin-left: 0.2em;
     margin-right: 0.1em;
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   .slide-text{
     font-size: 3em;
@@ -339,15 +382,15 @@ height: 100%;
     font-size: 2em;
   }
   .comp-icon{
-    height: 4em;
+    height: 2.5em;
   }
 
   #titlePalestrantes{
     font-size: 4em;
   }
   .imgPalestrantes{
-  width: 9em;
-  height: 9em;
+  width: 7em;
+  height: 7em;
   border-width: 5px;
   }
   .txtPalestrantes{
@@ -372,10 +415,10 @@ height: 100%;
 }
 @media(max-width: 1024px){
   .nav-item > a{
-    font-size: 1.2em;
+    font-size: 0.9em;
   }
   .comp-icon{
-    height: 3em;
+    height: 2em;
   }
   .slide-text{
     font-size: 2em;
@@ -405,6 +448,14 @@ height: 100%;
   }
 }
 @media(max-width: 768px){
+  .nav-item > a{
+    font-size: 13px;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  .comp-icon{
+    height: 1.7em;
+  }
   .slide-text{
     font-size: 2em;
   }
