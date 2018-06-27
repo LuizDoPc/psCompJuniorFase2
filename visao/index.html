@@ -7,60 +7,59 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="assets/css/ProjCSS.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50" style="overflow-x: hidden;">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <!--NavBar-->
 <div>
-<nav id="navbar" class="navbar navbar-expand-md fixed-top">
-	<a class="" href="#home">
-		<img src="assets/images/icon.png" class="comp-icon">
-	</a>
-	<button class="navbar-toggler navbar-toggler-right navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-	<div class="collapse navbar-collapse" id="navbarNav">
-		<ul class="nav nav-pills navbar-nav">
-			<li class="nav-item">
-				<a class="nav-link" href="#sobre">Sobre</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#palestrantes">Palestrantes</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#organizadores">Organizadores</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#localizacao">Localização</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#cadastro">Cadastro</a>
-			</li>
-		</ul>
-
-		<div class="navLog" style="padding-top: 10px;">
+	<nav id="navbar" class="navbar navbar-expand-md fixed-top">
+		<a class="" href="#home">
+			<img src="assets/images/icon.png" class="comp-icon">
+		</a>
+		<button class="navbar-toggler navbar-toggler-right navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="nav nav-pills navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#sobre">Sobre</a>
+				</li>	
+				<li class="nav-item">
+					<a class="nav-link" href="#palestrantes">Palestrantes</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#organizadores">Organizadores</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#localizacao">Localização</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#cadastro">Cadastro</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navLog col-xl-6 col-md-6">
 			<form>
 				<div class="row">
-					<div style="padding-top: 1.3%; padding-left: 4.5em; font-size: 0.9em">Já está cadastrado?</div>
+					<div class="navText">Faça seu Log-in</div>
 	  				<div class="form-group col">
-	    				<input type="text" class="form-control" style="line-height: 1em!important;" id="formGroupExampleInput" placeholder="E-mail">
+	    				<input type="email" class="form-control logBars" id="formGroupExampleInput" placeholder="E-mail">
 					</div>
 					<div class="form-group col">
-	    				<input type="password" class="form-control" style="line-height: 1em!important;" id="formGroupExampleInput" placeholder="Senha">
+	    				<input type="password" class="form-control logBars" id="formGroupExampleInput" placeholder="Senha">
 					</div>
 					<div>
-						<button type="submit" class="btn btn-primary">Entrar</button>
+						<button type="submit" class="btn btn-primary logBars">Entrar</button>
 					</div>
 				</div>
 			</form>
 		</div>
+	</nav>
 
-	</div>
-</nav>
-<div data-spy="scroll" data-target="#navbar" data-offset="0">
-</div>
+<div data-spy="scroll" data-target="#navbar" data-offset="0"></div>
 
 <!--Home-->
 <section id="home">
@@ -103,7 +102,7 @@
 <!--Sobre-->
 <section id="sobre">
 	<p class="titulo-sobre">Sobre</p>
-	<p class="texto-sobre container">Lorem ipsum dolor sit amet, <a href="http://compjunior.com.br" target="_blank">Comp Júnior</a>. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+	<p class="texto-sobre container-fluid">A <a href="http://compjunior.com.br" target="_blank">CompJúnior</a> está encerrando mais uma vez seu Processo Seletivo. Dessa vez, quase 40 trainees passaram por essa seleção e agora é a hora do resultado final! Convidamos a todos para comparecer no Anfiteatro do Departamento de Ciências da Computação (ver <a href="">Localização</a> para mais informações) para acompanhar de perto os resultados deste processo. Pessoas de grande influência na história da CompJúnior darão palestras para parabenizar e motivar os trainees que agora serão efetivados na empresa.</p>
 </section>
 
 <!--Palestrantes-->
@@ -112,42 +111,42 @@
 		Palestrantes
 	</p>
 	<p class="orientacaoPal">
-		Clique ou passe o cursor sobre as imagens para ver mais informações sobre os Palestrantes
+		Clique ou passe o cursor sobre as imagens para mais informações
 	</p>
 	<div class="row">
 		<div id="colPalestrantes" class="col-sm-12 col-md-4 row">
 			<div class="col-xl-12 cont">
-				<img src="assets/images/miranha.jpeg" class="imgPalestrantes" align="center">
+				<img src="assets/images/palestrantes1.jpg" class="imgPalestrantes" align="center">
 				<div class="overlay imgPalestrantes" align="center">
-				    <p class="text">singaro da cãrse</p>
+				    <p class="text">Diretor Presidente da CompJúnior</p>
   				</div>
 			</div>
 			<p class="txtPalestrantes col-12">
-				Miranha
+				Caio Vinícius
 			</p>
 		</div>
 
 		<div id="colPalestrantes" class="col-sm-12 col-md-4 row">
 			<div class="col-xl-12 cont">
-				<img src="assets/images/homem_de_lata.jpg" class="imgPalestrantes">
+				<img src="assets/images/palestrantes2.jpg" class="imgPalestrantes">
 				<div class="overlay imgPalestrantes" align="center">
-				    <p class="text">Gênio, bilionário, playboy e filantropo.</p>
+				    <p class="text">Diretora de Gestão de Pessoas da CompJúnior</p>
   				</div>
 			</div>
 			<p class="txtPalestrantes col-12">
-				Homi de Lata
+				Joyce Melo
 			</p>
 		</div>
 
 		<div id="colPalestrantes" class="col-sm-12 col-md-4 row">
 			<div class="col-xl-12 cont">
-				<img src="assets/images/capitao_referencia.jpg" class="imgPalestrantes">
+				<img src="assets/images/palestrantes3.jpg" class="imgPalestrantes">
 				<div class="overlay imgPalestrantes" align="center">
-				    <p class="text">Eu entendi a referência</p>
+				    <p class="text">Membro Efetivo/Tester</p>
   				</div>
 			</div>
 			<p class="txtPalestrantes col-12">
-				Capitão Referência
+				Bruno Jahel
 			</p>
 		</div>
 
@@ -161,31 +160,32 @@
   </div>
 
 <div class="row">
-  <div id="colOrganizadores" class="row col-md-4 col-sm-12">
+
+  <div id="colOrganizadores" class="row col-sm-12 col-md-4">
     <div class="col-xl-12">
-      <img src="assets/images/organizadores1.png" class="imgOrganizadores">
+      <img src="assets/images/organizadores1.jpeg" class="imgOrganizadores">
     </div>
     <div class="txtOrganizadores col-12">
-      Kakashi Hatake
+      Alisson Gonçalves
     </div>
     <div class="social">
-      <a href="https://www.facebook.com/narutoofficialsns/?ref=br_rs" target="_blank"><img src="assets/images/icon1 (2).svg" class="socialIcon"></a>
-      <a href=""><img src="assets/images/icon2 (2).svg" class="socialIcon"></a>
-      <a href=""><img src="assets/images/icon3 (2).svg" class="socialIcon"></a>
+      <a href="https://www.facebook.com/alisson.rodrigo.549" target="_blank"><img src="assets/images/icon1 (2).svg" class="socialIcon"></a>
+      <a href="https://github.com/AlissonRoGon/" target="_blank"><img src="assets/images/icon2 (2).svg" class="socialIcon"></a>
+      <a href="https://www.instagram.com/alisson_rogon/" target="_blank"><img src="assets/images/icon3 (2).svg" class="socialIcon"></a>
     </div>
   </div>
 
-  <div id="colOrganizadores" class="col-sm-12 col-md-4 row">
+  <div id="colOrganizadores" class="row col-sm-12 col-md-4">
       <div class="col-xl-12">
-         <img src="assets/images/organizadores2.jpg" class="imgOrganizadores">
+         <img src="assets/images/organizadores5.jpg" class="imgOrganizadores">
       </div>
       <div class="txtOrganizadores col-12">
-        Yatogami
+        Bruno Abreu
       </div>
       <div class="social">
-        <a href="https://www.facebook.com/Noragami.TV/?ref=br_rs" target="_blank"><img src="assets/images/icon1 (2).svg" class="socialIcon"></a>
-        <a href=""><img src="assets/images/icon2 (2).svg" class="socialIcon"></a>
-        <a href=""><img src="assets/images/icon3 (2).svg" class="socialIcon"></a>
+		<a href="https://www.facebook.com/brunorezabreu" target="_blank"><img src="assets/images/icon1 (2).svg" class="socialIcon"></a>
+        <a href="https://github.com/brunorezabreu" target="_blank"><img src="assets/images/icon2 (2).svg" class="socialIcon"></a>
+        <a href="https://www.instagram.com/brunorabreu/?hl=pt-br" target="_blank"><img src="assets/images/icon3 (2).svg" class="socialIcon"></a>
     </div>
   </div>
 
@@ -194,43 +194,43 @@
   <div class="row">
     <div id="colOrganizadores" class="col-sm-12 col-md-4 row">
       <div class="col-xl-12">
-        <img src="assets/images/organizadores3.jpg" class="imgOrganizadores">
+        <img src="assets/images/organizadores2.jpeg" class="imgOrganizadores">
       </div>
       <div class="txtOrganizadores col-12">
-        Edward Elric
+        João Veronezi
       </div>
       <div class="social">
-        <a href="https://www.facebook.com/FMAHiromuArakawa/?ref=br_rs" target="_blank"><img src="assets/images/icon1 (2).svg" class="socialIcon"></a>
-        <a href=""><img src="assets/images/icon2 (2).svg" class="socialIcon"></a>
-        <a href=""><img src="assets/images/icon3 (2).svg" class="socialIcon"></a>
+      	<a href="https://www.facebook.com/profile.php?id=100002731789283&ref=br_rs" target="_blank"><img src="assets/images/icon1 (2).svg" class="socialIcon"></a>
+        <a href="https://github.com/joaoveronezi/" target="_blank"><img src="assets/images/icon2 (2).svg" class="socialIcon"></a>
+        <a href="https://www.instagram.com/jvveronezi/?hl=pt-br" target="_blank"><img src="assets/images/icon3 (2).svg" class="socialIcon"></a>
       </div>
     </div>
 
     <div id="colOrganizadores" class="col-sm-12 col-md-4 row">
       <div class="col-xl-12">
-        <img src="assets/images/organizadores4.jpg" class="imgOrganizadores">
+        <img src="assets/images/organizadores4.jpe	g" class="imgOrganizadores">
       </div>
       <div class="txtOrganizadores col-12">
-        Saitama God
+        Luiz Soares
       </div>
       <div class="social">
-        <a href="https://www.facebook.com/OnePunchMan.GB/?ref=br_rs" target="_blank"><img src="assets/images/icon1 (2).svg" class="socialIcon"></a>
-        <a href=""><img src="assets/images/icon2 (2).svg" class="socialIcon"></a>
-        <a href=""><img src="assets/images/icon3 (2).svg" class="socialIcon"></a>
+        <a href="http://facebook.com/minerador" target="_blank"><img src="assets/images/icon1 (2).svg" class="socialIcon"></a>
+        <a href="https://github.com/LuizDoPc" target="_blank"><img src="assets/images/icon2 (2).svg" class="socialIcon"></a>
+        <a href="http://instagram.com/luizdopc" target="_blank"><img src="assets/images/icon3 (2).svg" class="socialIcon"></a>
       </div>
     </div>
 
     <div id="colOrganizadores" class="col-sm-12 col-md-4 row">
       <div class="col-xl-12">
-        <img src="assets/images/organizadores5.jpg" class="imgOrganizadores">
+        <img src="assets/images/organizadores3.jpeg" class="imgOrganizadores">
       </div>
       <div class="txtOrganizadores col-12">
-        Son Goku
+        Marcos José	
       </div>
       <div class="social">
-        <a href="https://www.facebook.com/DragonBallZ/?ref=br_rs" target="_blank"><img src="assets/images/icon1 (2).svg" class="socialIcon"></a>
-        <a href=""><img src="assets/images/icon2 (2).svg" class="socialIcon"></a>
-        <a href=""><img src="assets/images/icon3 (2).svg" class="socialIcon"></a>
+        <a href="https://www.facebook.com/profile.php?id=100003215395786&ref=br_rs" target="_blank"><img src="assets/images/icon1 (2).svg" class="socialIcon"></a>
+        <a href="https://github.com/dodoreptil" target="_blank"><img src="assets/images/icon2 (2).svg" class="socialIcon"></a>
+        <a href="https://www.instagram.com/dodoreptil/?hl=pt-br" target="_blank"><img src="assets/images/icon3 (2).svg" class="socialIcon"></a>
       </div>
     </div>
 
@@ -239,30 +239,27 @@
 
 <!--Localização-->
 <section id="localizacao" class="container-fluid">
-		<div id="titleLocalizaçao" class="col-12">
-			Localização
-		</div>
-		<div class="txtLocalização col-xl-12">
-			Essas sao as coordenadas para chegar ao <a href="http://dcc.ufla.br">Departamento de Ciência da Computação</a>:
-		</div>
+		<div id="titleLocalizacao" class="col-12">Localização</div>
+			<div class="txtLocalizacao col-xl-12">
+				Essas sao as coordenadas para chegar ao <a href="http://www.dcc.ufla.br/" target="_blank">Departamento de Ciência da Computação</a>:
+			</div>
 		<div id="myMap" class="col-md-6 col-sm-12"></div>
-
 </section>
 
 <!--Log-in/Sign-in-->
 <section id="cadastro">
 	<p class="titleCadastro">Cadastre-se!</p>
-	<form class="container">
+	<form class="container-fluid">
 
 		<div class="form-group">
-    		<label class="topicos" for="formGroupExampleInput">Nome:</label>
-    		<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Maria da Silva">
+    		<label class="topicos" for="Nome">Nome:</label>
+    		<input type="text" class="form-control dados" id="Nome" placeholder="Maria da Silva">
   		</div>
 
   		<div class="row">
 	  		<div class="form-group col">
-	    		<label class="topicos" for="formGroupExampleInput">Email:</label>
-	    		<input type="text" class="form-control" id="formGroupExampleInput" placeholder="nome@exemplo.com">
+	    		<label class="topicos" for="Email">Email:</label>
+	    		<input type="email" class="form-control" id="Email" placeholder="nome@exemplo.com">
 			</div>
 			<div class="form-group col">
 	    		<label class="topicos" for="formGroupExampleInput">Senha:</label>
@@ -272,8 +269,8 @@
 
 		<div class="row">
 			<div class="form-group col">
-	    		<label class="topicos" for="inputState">Sexo</label>
-	    		<select id="inputState" class="form-control">
+	    		<label class="topicos" for="Sexo">Sexo</label>
+	    		<select id="Sexo" class="form-control">
 	    			<option selected>---</option>
 	    			<option>Feminino</option>
 	    			<option>Masculino</option>
@@ -281,19 +278,19 @@
 	    		</select>
 	    	</div>
 		    <div class="form-group col">
-	    		<label class="topicos" for="formGroupExampleInput">CPF</label>
-	    		<input type="text" class="form-control" id="formGroupExampleInput" placeholder="123.456.789-12">
+	    		<label class="topicos" for="CPF">CPF</label>
+	    		<input type="text" class="form-control" id="CPF" placeholder="123.456.789-12">
 	  		</div>
     	</div>
 
     	<div class="row">
-    		<div class="form-group col-6">
-	    		<label class="topicos" for="formGroupExampleInput">CPF</label>
-	    		<input type="text" class="form-control" id="formGroupExampleInput" placeholder="123.456.789-12">
+    		<div class="form-group col-sm-6 col-12">
+	    		<label class="topicos" for="Nascimento">Data de Nascimento</label>
+	    		<input type="date" class="form-control" id="Nascimento" placeholder="dd/mm/aaaa">
 	  		</div>
-    		<div class="form-group col-2">
-	    		<label class="topicos" for="inputState">UF</label>
-	    		<select id="inputState" class="form-control">
+    		<div class="form-group col-sm-3 col-12">
+	    		<label class="topicos" for="ufRG">UF</label>
+	    		<select id="ufRG" class="form-control">
 	    			<option selected>---</option>
 	    			<option>AC</option>
 	    			<option>AL</option>
@@ -323,59 +320,58 @@
 	    			<option>SP</option>
 	    			<option>SE</option>
 	    			<option>TO</option>
-	    			
 	    		</select>
 	    	</div>
-	  		<div class="form-group col-4">
-	    		<label class="topicos" for="formGroupExampleInput">RG</label>
-	    		<input type="text" class="form-control" id="formGroupExampleInput" placeholder="12.345.678">
+	  		<div class="form-group col-sm-3 col-12">
+	    		<label class="topicos" for="RG">RG</label>
+	    		<input type="text" class="form-control" id="RG" placeholder="12.345.678">
 	  		</div>
     	</div>
 
     	<div class="row">
 	  		<div class="form-group col">
-	    		<label class="topicos" for="formGroupExampleInput">Telefone:</label>
-	    		<input type="text" class="form-control" id="formGroupExampleInput" placeholder="(DDD) (9) 1234-5678">
+	    		<label class="topicos" for="telefone">Telefone:</label>
+	    		<input type="text" class="form-control" id="telefone" placeholder="(DDD) (9) 1234-5678">
 			</div>
 			<div class="form-group col">
-	    		<label class="topicos" for="formGroupExampleInput">CEP:</label>
-	    		<input type="text" class="form-control" id="formGroupExampleInput" placeholder="12.345-678">
+	    		<label class="topicos" for="CEP">CEP:</label>
+	    		<input type="text" class="form-control" id="CEP" placeholder="12.345-678">
 			</div>
 		</div>
 		<div class="row">
-			<div class="form-group col-2">
-	    		<label class="topicos" for="formGroupExampleInput">Cidade:</label>
-	    		<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Lavras">
+			<div class="form-group col-12 col-sm-12">
+	    		<label class="topicos" for="Cidade">Cidade:</label>
+	    		<input type="text" class="form-control " id="Cidade" placeholder="Lavras">
 	  		</div>
-			<div class="form-group col-4">
-	    		<label class="topicos" for="formGroupExampleInput">Endereço:</label>
-	    		<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Rua dos Alfineiros">
+			<div class="form-group col-12 col-sm-6">
+	    		<label class="topicos" for="Logradouro">Endereço:</label>
+	    		<input type="text" class="form-control" id="Logradouro" placeholder="Rua dos Alfineiros">
 	  		</div>
-	  		<div class="form-group col-2">
-	    		<label class="topicos" for="formGroupExampleInput">Número:</label>
-	    		<input type="text" class="form-control" id="formGroupExampleInput" placeholder="4">
+	  		<div class="form-group col-12 col-sm-6">
+	    		<label class="topicos" for="Numero">Número:</label>
+	    		<input type="text" class="form-control" id="Numero" placeholder="4">
 	  		</div>
-	  		<div class="form-group col-2">
-	    		<label class="topicos" for="formGroupExampleInput">Complemento:</label>
-	    		<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Apto. 201">
+	  		<div class="form-group col-12 col-sm-6">
+	    		<label class="topicos" for="Complemento">Complemento:</label>
+	    		<input type="text" class="form-control" id="Complemento" placeholder="Apto. 201">
 	  		</div>
-	  		<div class="form-group col-2">
-	    		<label class="topicos" for="formGroupExampleInput">Bairro:</label>
-	    		<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Centro">
+	  		<div class="form-group col-12 col-sm-6">
+	    		<label class="topicos" for="Bairro">Bairro:</label>
+	    		<input type="text" class="form-control" id="Bairro" placeholder="Centro">
 	  		</div>
   		</div>
-  			<button type="submit" class="btn btn-primary" style="margin-bottom: 10px;">Cadastrar</button>
+  			<button type="submit" class="btn btn-primary logBotao">Cadastrar</button>
 	</form>
 </section>
+
 <!--RODAPÉ-->
 <section id="rodape">
-	<div align="center" style="color: #FFD444">Nossos Patrocinadores</div>
+	<div align="center" class="pat">Patrocinadores</div>
 	<div class="row">
 		<img src="assets/images/patrocinador1.png" class="logoPatrocinador">
 		<img src="assets/images/patrocinador2.png" class="logoPatrocinador">
 		<img src="assets/images/patrocinador3.png" class="logoPatrocinador">
 	</div>
-
 </section>
 
 </div>
