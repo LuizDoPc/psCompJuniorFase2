@@ -2,10 +2,13 @@
   font-family: "Moon 2.0 Regular";
   src: url(../fonts/Moon2.0-Regular.otf);
 }
+
 body{
   position: relative; 
+  overflow-x: hidden;
   font-family: "Moon 2.0 Regular";
 }
+
 div{
   font-family: "Moon 2.0 Regular"; 
 }
@@ -13,7 +16,7 @@ div{
 /* Navbar */
 #navbar {
   background-color: #0F0A0A;
-  opacity: 0.95;
+  opacity: 0.85;
 }
 .nav {
   color: #009688;
@@ -46,7 +49,16 @@ button.navbar-toggler {
 .navLog{
   color: white;
   font-size: 1em;
-  margin-left: 10px;
+
+  padding-top: 10px;
+}
+.navText{
+  padding-top: 1%;
+  font-size: 1em
+}
+.logBars{
+  line-height: 1em!important;
+  width: auto;
 }
 
 /* NavBar FIM */
@@ -95,22 +107,25 @@ section.container-fluid{
   padding-bottom: 0.5em;
 }
 
+#sobre a:hover{
+  color: #0063cc!important;
+}
 
 .titulo-sobre{
-  font-size: 4.5em;
+  font-size: 3em!important;
   text-align: center;
   padding-top: 1em;
   color: #f1f2eb;
 }
 
 .texto-sobre{
-  
-  font-size: 2em;
+  font-size: 2em!important;
   text-align: center;
   padding-left: 2em;
   padding-right: 2em;
   padding-bottom: 1em;
   color: #f1f2eb;
+  font-family: 'Quicksand', sans-serif;
 }
 
 /* Sobre FIM */
@@ -137,6 +152,7 @@ section.container-fluid{
 .orientacaoPal{
   text-align: center;
   color: #0F0A0A; 
+  font-size: 1.5em;
 }
 .imgPalestrantes{
   width: 9em;
@@ -152,6 +168,7 @@ section.container-fluid{
 .txtPalestrantes {
   padding-top: 6%;
   text-align: center;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .cont {
@@ -193,6 +210,7 @@ section.container-fluid{
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;  
+  font-family: 'Quicksand', sans-serif;
 }
 
 /* Palestrantes FIM */
@@ -207,7 +225,7 @@ section.container-fluid{
 #titleOrganizadores{
   text-align: center;
   font-size: 4em;
-  color: #0F0A0A;
+  color: #f1f2eb;
   padding-top: 0.1em;
 }
 #colOrganizadores{
@@ -215,15 +233,15 @@ section.container-fluid{
   font-size: 2.5em;
   margin-left: auto;
   margin-right: auto;
-  color: #0F0A0A;
+  color: #f1f2eb;
 }
 .imgOrganizadores{
   width: 7em;
   height: 7em;
-  border-radius: 50%;
+  border-radius: 10%;
   border: solid;
   border-width: 5px;
-  border-color: #0F0A0A;
+  border-color: #f1f2eb;
   margin-top: 10%;
   object-fit: cover;
 }
@@ -242,17 +260,20 @@ section.container-fluid{
 
 /* Localização */
 #localizacao {
-  background-color: #7c9eb2;
+  background-color: #5e88a1;
   height:auto;
   width: 100%;
-  padding-bottom: 1em;
+  padding-bottom: 3em;
 }
 
-div#localizacao a{
-color: red;
+#localizacao a{
+color: #f1f2eb!important;
 }
 
-#titleLocalizaçao {
+#localizacao a:hover{
+  color: #dee1d1!important;
+}
+#titleLocalizacao {
   text-align: center;
   font-size: 4em;
   color: #0F0A0A;
@@ -260,14 +281,17 @@ color: red;
 #myMap {
   margin-left: auto;
   margin-right: auto;
-  width: 95% !important;
-  height: 24em;
+  max-width: 85%!important;
+  height: 26em;
+  
+
 }
-.txtLocalização{
+.txtLocalizacao{
   color: #0F0A0A;
   font-size: 1.5em;
   text-align: center;
   padding-bottom: 0.5em;
+  font-family: 'Quicksand', sans-serif;
 }
 /* Localização FIM */
 
@@ -276,36 +300,38 @@ color: red;
   background-color: #eaebef;
   height: auto;
   width: 100vw;
-  padding-bottom: 2em;
 }
 .titleCadastro{
   text-align: center;
   font-size: 4em;
-  padding-top: 0.7em;
+  padding-top: 0.9em;
   color: #0F0A0A;
 }
 .topicos{
   font-size: 1.5em;
+  font-family: 'Quicksand', sans-serif;
 }
 /* Log-in/Sign-in FIM */
 
 /* Rodapé/Patrocinadores */
 #rodape{
+  margin-top: 1em;
   background-color: #0F0A0A ;
   height: auto;
+  color: #FFD444;
 }
 .logoPatrocinador{
   width: auto;
   height: 3em;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1%;
-  margin-bottom: 1%;
+  margin-top: 2%;
+  margin-bottom:2%;
 }
 /* Rodapé/Patrocinadores FIM */
 
 /*  Media Queries */
-@media(max-width: 2560px){
+@media(min-width: 2560px){
   .slide-text{
     font-size: 4em;
   }
@@ -316,92 +342,168 @@ color: red;
     font-size: 3em;
   }
   .nav-item > a{
-    font-size: 3em;
+    font-size: 2.5em;
     margin-left: 10px;
     margin-right: 10px;
   }
   .comp-icon{
-    height: 6em;
+    height: 4.5em;
+  }
+  .navLog{
+    font-size: 1em!important;
+  }
+  .navText{
+    font-size: 1.6em;
+    padding-top: 1.5%;
+  }
+  .logBars{
+    font-size: 2em!important;
+    line-height: 2em!important;
+  }
+
+  #sobre{
+    padding-left: 14em;
+    padding-right: 14em;
+    text-align: justify;
+  }
+  .titulo-sobre{
+    font-size: 6.5em!important;
+  }
+  .texto-sobre{
+    font-size: 3em!important;
   }
 
   #titlePalestrantes{
     font-size: 7em;
   }
   .imgPalestrantes{
-  width: 14em;
-  height: 14em;
+  width: 12em;
+  height: 12em;
   border-width: 10px;
   }
   .txtPalestrantes{
     font-size: 2em;
+  }
+  .orientacaoPal{
+    font-size: 3em;
+  }
+  .text{
+    font-size: 1.2em;
+  }
+
+  #organizadores{
+    padding-bottom: 6em;
   }
   #titleOrganizadores{
     font-size: 7em;
     color: #f1f2eb;
   }
   .imgOrganizadores{
-  width: 13em;
-  height: 13em;
+  width: 13em!important;
+  height: 13em!important;
   border-width: 10px;
   }
   .txtOrganizadores{
     font-size: 2em;
     color: #f1f2eb;
   }
-
   .socialIcon{
-  height: 1.7em;
-  width: 1.7em;
+  height: 2.3em;
+  width: 2.3em;
   color: #f1f2eb;
   margin-left: 10px;
   }
   .imgOrganizadores{
-  width: 10em;
-  height: 10em;
-  border-radius: 50%;
+  width: 9em;
+  height: 9em;
   border: solid;
   border-width: 10px;
   border-color: #f1f2eb;
   margin-top: 10%;
   object-fit: cover;
   }
+
+  #titleLocalizacao{
+    font-size: 7em;
+  }
+  .txtLocalizacao{
+    font-size: 3em;
+  }
+  #myMap{
+    height: 50em;
+  }
+
+  #cadastro{
+    margin-left: 23em;
+    margin-right: 23em;
+  }
+  .titleCadastro{
+    font-size: 4em!important;
+  }
+  .form-control{
+    line-height: 2em!important;
+  }
+  .topicos{
+    font-size: 3em;
+  }
+  input{
+    font-size: 1.7em!important;
+  }
+  #cadastro button{
+    font-size: 2em;
+  }
+
+  .pat{
+    font-size: 2.5em;
+  }
+  .logoPatrocinador{
+    width: auto;
+    height: 5em;
+    margin-top: 1%;
+  }
 }
 @media(max-width: 2000px){
   .nav-item > a{
     margin-left: 0.2em;
     margin-right: 0.1em;
-    font-size: 1.2em;
+    font-size: 1.7em;
   }
   .slide-text{
     font-size: 3em;
   }
   .titulo-sobre{
-    font-size: 4em;
+    font-size: 3em!important;
   }
   .texto-sobre{
     font-size: 2em;
   }
   .comp-icon{
-    height: 2.5em;
+    height: auto;
+    width: 9em;
+  }
+
+  #sobre{
+    padding-right: 10%;
+    padding-left: 10%;
   }
 
   #titlePalestrantes{
-    font-size: 4em;
+    font-size: 3em;
   }
   .imgPalestrantes{
-  width: 7em;
-  height: 7em;
+  width: 6em;
+  height: 6em;
   border-width: 5px;
   }
   .txtPalestrantes{
     font-size: 1em;
   }
   #titleOrganizadores{
-    font-size: 4em;
+    font-size: 3em;
   }
   .imgOrganizadores{
-  width: 7em;
-  height: 7em;
+  width: 6em;
+  height: 6em;
   border-width: 5px;
   }
   .txtOrganizadores{
@@ -412,16 +514,44 @@ color: red;
   width: 1.2em;
   margin-left: 5px;
   }
+  #titleLocalizacao{
+    font-size: 3em;
+  }
+
+  #cadastro{
+    margin-left: 11em;
+    margin-right: 11em;
+  }
+  .titleCadastro{
+    font-size: 3em;
+  }
 }
+
+@media(max-width: 1440px){
+  .nav-item > a{
+    font-size: 1.3em;
+  }
+}
+
 @media(max-width: 1024px){
   .nav-item > a{
     font-size: 0.9em;
   }
   .comp-icon{
-    height: 2em;
+    height: auto;
+    width: 7em;
   }
   .slide-text{
     font-size: 2em;
+  }
+  .navLog{
+    font-size: 0.5em!important;
+  }
+  .navText{
+    font-size: 1.6em;
+  }
+  .navLog .form-control{
+    width: 7em!important;
   }
 
   #titlePalestrantes{
@@ -445,6 +575,14 @@ color: red;
   }
   .txtOrganizadores{
     font-size: 0.8em;
+  }
+
+  #titleLocalizacao{
+    font-size: 3em!important;
+  }
+
+  .titleCadastro{
+    font-size: 3em!important;
   }
 }
 @media(max-width: 768px){
@@ -456,6 +594,17 @@ color: red;
   .comp-icon{
     height: 1.7em;
   }
+  .navLog{
+    display: none;
+  }
+
+  #navbarNav{
+    width: 100px!important;
+  }
+  .navText{
+    display: none;
+  }
+
   .slide-text{
     font-size: 2em;
   }
@@ -471,6 +620,13 @@ color: red;
     text-align: center;
   }
 
+  .titulo-sobre{
+    font-size: 2em;
+  }
+  .texto-sobre{
+    font-size: 1.5em!important;
+  }
+
   #titlePalestrantes{
     font-size: 2em;
   }
@@ -494,19 +650,44 @@ color: red;
   .txtOrganizadores{
     font-size: 0.6em;
   }
+  #titleLocalizacao{
+    font-size: 2em!important;
+  }
+  .txtLocalizacao{
+    font-size: 1em!important;
+  }
+
+  #cadastro{
+    margin-left: 7em;
+    margin-right: 7em;
+  }
+  .titleCadastro{
+    font-size: 2.5em!important;
+  }
+  .topicos{
+    font-size: 1.3em;
+  }
 }
 @media(max-width: 425px){
   .comp-icon{
-    height: 2em;
+    height: auto;
+    width: 9em;
   }
+
   .slide-text{
     font-size: 1em;
   }
+
   .titulo-sobre{
     font-size: 2em;
   }
   .texto-sobre{
     font-size: 1em;
+  }
+
+  #cadastro{
+    margin-left: 2.5em;
+    margin-right: 2.5em;
   }
   .topicos{
     text-align: center;
