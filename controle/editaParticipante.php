@@ -40,5 +40,3 @@ $p->setEstadoIdEstado($estado);
 $p->setCidadeIdCidade($cidade);
 
 $p->update($cpf);
-
-header('Location: ../visao/');
