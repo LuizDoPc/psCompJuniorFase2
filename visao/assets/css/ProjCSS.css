@@ -1,0 +1,522 @@
+@font-face{
+  font-family: "Moon 2.0 Regular";
+  src: url(../fonts/Moon2.0-Regular.otf);
+}
+body{
+  position: relative; 
+  font-family: "Moon 2.0 Regular";
+}
+div{
+  font-family: "Moon 2.0 Regular"; 
+}
+
+/* Navbar */
+#navbar {
+  background-color: #0F0A0A;
+  opacity: 0.95;
+}
+.nav {
+  color: #009688;
+  font-size: 0.8em;
+}
+.nav-pills > li > a.active {
+  background-color: #F8F32B!important;
+  opacity: 1;
+}
+.nav-pills > li > a:hover{
+  background-color: #FFD444!important;
+  opacity: 0.90;
+}
+.nav-item > a {
+  color: #FFD444!important;
+  opacity: 0.90;
+}
+.nav-item > a:hover{
+  color: #0f0a0a!important;
+  opacity: 0.90;
+}
+.nav-item > a.active {
+  color: #0f0a0a!important;
+  opacity: 0.90;
+}
+
+button.navbar-toggler {
+  background-color: #FFD444!important;
+}
+.navLog{
+  color: white;
+  font-size: 1em;
+  margin-left: 10px;
+}
+
+/* NavBar FIM */
+
+/*Sections*/
+section.container-fluid{
+  padding-top: 50px;
+  height: 100vh;
+  color: #fff;
+  opacity: 0.95;
+}
+
+/* Home/Slide Show */
+  #home{
+
+  }
+
+  /* Make the image fully responsive */
+  .carousel-inner img {
+      width: 100vw;
+      height: 100%;
+  }
+
+  .slide-text{
+    font-size: 3em;
+  }
+  
+  .carousel-caption1{
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+/* SLIDESHOW FIM*/
+
+/* Sobre */
+#sobre {
+  background-color: #2A565C;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 0.5em;
+}
+
+
+.titulo-sobre{
+  font-size: 4.5em;
+  text-align: center;
+  padding-top: 1em;
+  color: #f1f2eb;
+}
+
+.texto-sobre{
+  
+  font-size: 2em;
+  text-align: center;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 1em;
+  color: #f1f2eb;
+}
+
+/* Sobre FIM */
+
+/* Palestrantes */
+#palestrantes{
+  background-color: #FFD444;
+  height: 100%;
+  padding-bottom: 2em;
+}
+#titlePalestrantes{
+  text-align: center;
+  font-size: 4.5em;
+  color: #0F0A0A;
+  padding-top: 0.1em;
+}
+#colPalestrantes {
+  text-align: center;
+  font-size: 2.5em;
+  margin-left: auto;
+  margin-right: auto;
+  color: #0F0A0A;
+}
+.orientacaoPal{
+  text-align: center;
+  color: #0F0A0A; 
+}
+.imgPalestrantes{
+  width: 9em;
+  height: 9em;
+  border-radius: 10%;
+  border: solid;
+  border-width: 5px;
+  border-color: #0F0A0A;
+  margin-top: 10%;
+  object-fit: cover;
+}
+
+.txtPalestrantes {
+  padding-top: 6%;
+  text-align: center;
+}
+
+.cont {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+    position: absolute;
+    height: 14em;
+    width: 14em ;
+    opacity: 0;
+    top: 0;
+    bottom: 0 !important;
+    left: 0;
+    right: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    margin-right: auto;
+    margin-left: auto;
+    bottom: 0%;
+}
+.cont:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;  
+}
+
+/* Palestrantes FIM */
+
+/* Organizadores */
+
+#organizadores{
+  background-color: #0b3c5d;
+  height: auto;
+  padding-bottom: 2em;
+}
+#titleOrganizadores{
+  text-align: center;
+  font-size: 4em;
+  color: #0F0A0A;
+  padding-top: 0.1em;
+}
+#colOrganizadores{
+  text-align: center;
+  font-size: 2.5em;
+  margin-left: auto;
+  margin-right: auto;
+  color: #0F0A0A;
+}
+.imgOrganizadores{
+  width: 7em;
+  height: 7em;
+  border-radius: 50%;
+  border: solid;
+  border-width: 5px;
+  border-color: #0F0A0A;
+  margin-top: 10%;
+  object-fit: cover;
+}
+.social{
+  margin: auto;
+}
+.socialIcon{
+  height: 1em;
+  width: 1em;
+  margin-left: 5px;
+}
+.socialIcon:hover{
+  filter: drop-shadow(2px 2px 3px black);
+}
+/* Organizadores FIM */
+
+/* Localização */
+#localizacao {
+  background-color: #7c9eb2;
+  height:auto;
+  width: 100%;
+  padding-bottom: 1em;
+}
+
+div#localizacao a{
+color: red;
+}
+
+#titleLocalizaçao {
+  text-align: center;
+  font-size: 4em;
+  color: #0F0A0A;
+}
+#myMap {
+  margin-left: auto;
+  margin-right: auto;
+  width: 95% !important;
+  height: 24em;
+}
+.txtLocalização{
+  color: #0F0A0A;
+  font-size: 1.5em;
+  text-align: center;
+  padding-bottom: 0.5em;
+}
+/* Localização FIM */
+
+/* Log-in/Sign-in */
+#loginSignin {
+  background-color: #eaebef;
+  height: auto;
+  width: 100vw;
+  padding-bottom: 2em;
+}
+.titleCadastro{
+  text-align: center;
+  font-size: 4em;
+  padding-top: 0.7em;
+  color: #0F0A0A;
+}
+.topicos{
+  font-size: 1.5em;
+}
+/* Log-in/Sign-in FIM */
+
+/* Rodapé/Patrocinadores */
+#rodape{
+  background-color: #0F0A0A ;
+  height: auto;
+}
+.logoPatrocinador{
+  width: auto;
+  height: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+/* Rodapé/Patrocinadores FIM */
+
+/*  Media Queries */
+@media(max-width: 2560px){
+  .slide-text{
+    font-size: 4em;
+  }
+  .titulo-sobre{
+    font-size: 4em;
+  }
+  .texto-sobre{
+    font-size: 3em;
+  }
+  .nav-item > a{
+    font-size: 3em;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .comp-icon{
+    height: 6em;
+  }
+
+  #titlePalestrantes{
+    font-size: 7em;
+  }
+  .imgPalestrantes{
+  width: 14em;
+  height: 14em;
+  border-width: 10px;
+  }
+  .txtPalestrantes{
+    font-size: 2em;
+  }
+  #titleOrganizadores{
+    font-size: 7em;
+    color: #f1f2eb;
+  }
+  .imgOrganizadores{
+  width: 13em;
+  height: 13em;
+  border-width: 10px;
+  }
+  .txtOrganizadores{
+    font-size: 2em;
+    color: #f1f2eb;
+  }
+
+  .socialIcon{
+  height: 1.7em;
+  width: 1.7em;
+  color: #f1f2eb;
+  margin-left: 10px;
+  }
+  .imgOrganizadores{
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  border: solid;
+  border-width: 10px;
+  border-color: #f1f2eb;
+  margin-top: 10%;
+  object-fit: cover;
+  }
+}
+@media(max-width: 2000px){
+  .nav-item > a{
+    margin-left: 0.2em;
+    margin-right: 0.1em;
+    font-size: 1.2em;
+  }
+  .slide-text{
+    font-size: 3em;
+  }
+  .titulo-sobre{
+    font-size: 4em;
+  }
+  .texto-sobre{
+    font-size: 2em;
+  }
+  .comp-icon{
+    height: 2.5em;
+  }
+
+  #titlePalestrantes{
+    font-size: 4em;
+  }
+  .imgPalestrantes{
+  width: 7em;
+  height: 7em;
+  border-width: 5px;
+  }
+  .txtPalestrantes{
+    font-size: 1em;
+  }
+  #titleOrganizadores{
+    font-size: 4em;
+  }
+  .imgOrganizadores{
+  width: 7em;
+  height: 7em;
+  border-width: 5px;
+  }
+  .txtOrganizadores{
+    font-size: 1em;
+  }
+  .socialIcon{
+  height: 1.2em;
+  width: 1.2em;
+  margin-left: 5px;
+  }
+}
+@media(max-width: 1024px){
+  .nav-item > a{
+    font-size: 0.9em;
+  }
+  .comp-icon{
+    height: 2em;
+  }
+  .slide-text{
+    font-size: 2em;
+  }
+
+  #titlePalestrantes{
+    font-size: 3em;
+  }
+  .imgPalestrantes{
+  width: 7em;
+  height: 7em;
+  border-width: 5px;
+  }
+  .txtPalestrantes{
+    font-size: 0.8em;
+  }
+  #titleOrganizadores{
+    font-size: 3em;
+  }
+  .imgOrganizadores{
+  width: 7em;
+  height: 7em;
+  border-width: 5px;
+  }
+  .txtOrganizadores{
+    font-size: 0.8em;
+  }
+}
+@media(max-width: 768px){
+  .nav-item > a{
+    font-size: 13px;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  .comp-icon{
+    height: 1.7em;
+  }
+  .slide-text{
+    font-size: 2em;
+  }
+  .carousel-caption1{
+    position: absolute;
+    right: 15%;
+    bottom: 0px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+  }
+
+  #titlePalestrantes{
+    font-size: 2em;
+  }
+  .imgPalestrantes{
+  width: 5em;
+  height: 5em;
+  border-width: 5px;
+  }
+  .txtPalestrantes{
+    font-size: 0.6em;
+  }
+
+  #titleOrganizadores{
+    font-size: 2em;
+  }
+  .imgOrganizadores{
+  width: 5em;
+  height: 5em;
+  border-width: 5px;
+  }
+  .txtOrganizadores{
+    font-size: 0.6em;
+  }
+}
+@media(max-width: 425px){
+  .comp-icon{
+    height: 2em;
+  }
+  .slide-text{
+    font-size: 1em;
+  }
+  .titulo-sobre{
+    font-size: 2em;
+  }
+  .texto-sobre{
+    font-size: 1em;
+  }
+  .topicos{
+    text-align: center;
+  }
+}
+@media(max-width: 375px){
+  .imagem-slide{
+    padding-top:3em;
+  }
+  .slide-text{
+    font-size: 0.7em;
+  }
+}
