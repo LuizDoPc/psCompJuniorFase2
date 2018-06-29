@@ -60,6 +60,16 @@ button.navbar-toggler {
   line-height: 1em!important;
   width: auto;
 }
+.logBars a{
+  color: white;
+}
+.logBars a:hover{
+  color: white;
+  text-decoration: none;
+}
+#botaoMobile{
+
+}
 
 /* NavBar FIM */
 
@@ -277,15 +287,16 @@ color: #f1f2eb!important;
   text-align: center;
   font-size: 4em;
   color: #0F0A0A;
+  padding-top: 0.5em;
 }
 #myMap {
   margin-left: auto;
   margin-right: auto;
-  max-width: 85%!important;
-  height: 26em;
-  
-
+  margin-top: 0.5em;
+  max-width: 50%!important;
+  height: 17em;
 }
+
 .txtLocalizacao{
   color: #0F0A0A;
   font-size: 1.5em;
@@ -293,6 +304,7 @@ color: #f1f2eb!important;
   padding-bottom: 0.5em;
   font-family: 'Quicksand', sans-serif;
 }
+
 /* Localização FIM */
 
 /* Log-in/Sign-in */
@@ -332,6 +344,9 @@ color: #f1f2eb!important;
 
 /*  Media Queries */
 @media(min-width: 2560px){
+  .mobileButton{
+    display: none;
+  }
   .slide-text{
     font-size: 4em;
   }
@@ -345,6 +360,9 @@ color: #f1f2eb!important;
     font-size: 2.5em;
     margin-left: 10px;
     margin-right: 10px;
+  }
+  #botaoMobile{
+    display: none!important;
   }
   .comp-icon{
     height: 4.5em;
@@ -430,7 +448,7 @@ color: #f1f2eb!important;
     font-size: 3em;
   }
   #myMap{
-    height: 50em;
+    height: 15em;
   }
 
   #cadastro{
@@ -586,6 +604,17 @@ color: #f1f2eb!important;
   }
 }
 @media(max-width: 768px){
+  .mobileButton{
+    display: block;
+    margin-left: 25%;
+  }
+  .mobileButton a{
+    color: white;
+  }
+  .mobileButton a: hover{
+    color: white;
+  }
+
   .nav-item > a{
     font-size: 13px;
     margin-left: 3px;
@@ -597,7 +626,6 @@ color: #f1f2eb!important;
   .navLog{
     display: none;
   }
-
   #navbarNav{
     width: 100px!important;
   }
@@ -669,6 +697,11 @@ color: #f1f2eb!important;
   }
 }
 @media(max-width: 425px){
+  .mobileButton{
+    margin-left: 0;
+    line-height: 1em;
+  }
+
   .comp-icon{
     height: auto;
     width: 9em;
@@ -684,6 +717,7 @@ color: #f1f2eb!important;
   .texto-sobre{
     font-size: 1em;
   }
+
 
   #cadastro{
     margin-left: 2.5em;
