@@ -1,0 +1,81 @@
+@font-face{
+  font-family: "Moon 2.0 Regular";
+  src: url(C:\Users\Edson\Documents\UFLA\CompJr\PS2018\frontend\assets\font\Moon2.0-Regular.otf);
+}
+
+body{
+  position: relative; 
+  overflow-x: hidden;
+  font-family: "Moon 2.0 Regular";
+}
+
+div{
+  font-family: "Moon 2.0 Regular"; 
+}
+
+#areaInscrito{
+	background-color: #f1f2eb;
+	height: 100%;
+	width: auto;
+	padding-bottom: 1em;
+}
+#topTitle{
+	padding-top: 0.2em;
+	font-size: 3em;
+	color: #0F0A0A;
+	text-align: center;
+}
+#usuario{
+	margin-left: auto;
+	margin-right: auto;
+}
+#avatar{
+	height: 8em;
+	width: auto;
+	border-radius: 50%;
+  margin-bottom: 1em;
+	color: #0F0A0A;
+}
+
+p{
+	margin-right: auto;
+	margin-left: auto; 
+	font-size: 2em!important;
+}
+
+.col-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+    font-size: 2.3em;
+    margin-top: 0.9em;
+}
+
+@media(max-width: 2560px){
+#usuario{
+    margin-left: 23em;
+    margin-right: 23em;
+  }
+}
+
+@media(max-width: 2000px){
+	#usuario{
+    margin-left: 11em;
+    margin-right: 11em;
+  }
+}
+@media(max-width: 768px){
+	#usuario{
+    margin-left: 7em;
+    margin-right: 7em;
+  }
+  .col-12{
+    text-align: center;
+  }
+}
+@media(max-width: 425px){
+	#usuario{
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+  }
+}
