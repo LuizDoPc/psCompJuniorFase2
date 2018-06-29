@@ -40,19 +40,20 @@
 					<a class="nav-link" href="#cadastro">Cadastro</a>
 				</li>
 			</ul>
+			<button type="submit" class="d-lg-none d-md-block btn btn-primary mobileButton"><a href="file:///C:/Users/Edson/Desktop/login.html"><a>Log-in</a></button>
 		</div>
 		<div class="navLog col-xl-6 col-md-6">
 			<form>
 				<div class="row">
 					<div class="navText">Faça seu Log-in</div>
 	  				<div class="form-group col">
-	    				<input type="email" class="form-control logBars" id="formGroupExampleInput" placeholder="E-mail">
+	    				<input required type="email" class="form-control logBars" id="formGroupExampleInput" placeholder="E-mail">
 					</div>
 					<div class="form-group col">
-	    				<input type="password" class="form-control logBars" id="formGroupExampleInput" placeholder="Senha">
+	    				<input required type="password" class="form-control logBars" id="formGroupExampleInput" placeholder="Senha">
 					</div>
 					<div>
-						<button type="submit" class="btn btn-primary logBars">Entrar</button>
+						<button type="submit" class="btn btn-primary logBars"><a href="file:///C:/Users/Edson/Desktop/inscrito.html"><a>Entrar</a></button>
 					</div>
 				</div>
 			</form>
@@ -102,7 +103,7 @@
 <!--Sobre-->
 <section id="sobre">
 	<p class="titulo-sobre">Sobre</p>
-	<p class="texto-sobre container-fluid">A <a href="http://compjunior.com.br" target="_blank">CompJúnior</a> está encerrando mais uma vez seu Processo Seletivo. Dessa vez, quase 40 trainees passaram por essa seleção e agora é a hora do resultado final! Convidamos a todos para comparecer no Anfiteatro do Departamento de Ciências da Computação (ver <a href="">Localização</a> para mais informações) para acompanhar de perto os resultados deste processo. Pessoas de grande influência na história da CompJúnior darão palestras para parabenizar e motivar os trainees que agora serão efetivados na empresa.</p>
+	<p class="texto-sobre container-fluid">A <a href="http://compjunior.com.br" target="_blank">CompJúnior</a> está encerrando mais uma vez seu Processo Seletivo. Dessa vez, quase 40 trainees passaram por essa seleção e agora é a hora do resultado final! Convidamos a todos para comparecer no Anfiteatro do Departamento de Ciência da Computação (ver <a href="#localizacao">Localização</a> para mais informações) no dia 07/07/2018 (Sábado) para acompanhar de perto os resultados deste processo. Pessoas de grande influência na história da CompJúnior darão palestras para parabenizar e motivar os trainees que agora serão efetivados na empresa.</p>
 </section>
 
 <!--Palestrantes-->
@@ -177,7 +178,7 @@
 
   <div id="colOrganizadores" class="row col-sm-12 col-md-4">
       <div class="col-xl-12">
-         <img src="assets/images/organizadores5.jpg" class="imgOrganizadores">
+         <img src="assets/images/organizadores5.jpeg" class="imgOrganizadores">
       </div>
       <div class="txtOrganizadores col-12">
         Bruno Abreu
@@ -239,39 +240,39 @@
 
 <!--Localização-->
 <section id="localizacao" class="container-fluid">
-		<div id="titleLocalizacao" class="col-12">Localização</div>
-			<div class="txtLocalizacao col-xl-12">
-				Essas sao as coordenadas para chegar ao <a href="http://www.dcc.ufla.br/" target="_blank">Departamento de Ciência da Computação</a>:
-			</div>
-		<div id="myMap" class="col-md-6 col-sm-12"></div>
+	<div id="titleLocalizacao" class="col-12">Localização</div>
+		<div class="txtLocalizacao col-xl-12">
+			Essas são as coordenadas para chegar ao <a href="http://www.dcc.ufla.br/" target="_blank">Departamento de Ciência da Computação</a>:
+			<div id="myMap" class="col-xl-8 col-sm-"8></div>
+			Avenida Central, UFLA - Centro, Lavras - MG, 37200-000
+		</div>
 </section>
 
 <!--Log-in/Sign-in-->
 <section id="cadastro">
 	<p class="titleCadastro">Cadastre-se!</p>
 	<form class="container-fluid">
-
 		<div class="form-group">
     		<label class="topicos" for="Nome">Nome:</label>
-    		<input type="text" class="form-control dados" id="Nome" placeholder="Maria da Silva">
+    		<input required type="text" class="form-control dados" id="Nome" placeholder="Maria da Silva">
   		</div>
 
   		<div class="row">
 	  		<div class="form-group col">
 	    		<label class="topicos" for="Email">Email:</label>
-	    		<input type="email" class="form-control" id="Email" placeholder="nome@exemplo.com">
+	    		<input required type="email" class="form-control" id="Email" placeholder="nome@exemplo.com">
 			</div>
 			<div class="form-group col">
 	    		<label class="topicos" for="formGroupExampleInput">Senha:</label>
-	    		<input type="password" class="form-control" id="formGroupExampleInput" placeholder="Insira sua Senha aqui">
+	    		<input required type="password" class="form-control" id="formGroupExampleInput" placeholder="Insira sua Senha aqui">
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="form-group col">
 	    		<label class="topicos" for="Sexo">Sexo</label>
-	    		<select id="Sexo" class="form-control">
-	    			<option selected>---</option>
+	    		<select required id="Sexo" class="form-control">
+	    			<option value="" selected>---</option>
 	    			<option>Feminino</option>
 	    			<option>Masculino</option>
 	    			<option>Outro</option>
@@ -279,77 +280,76 @@
 	    	</div>
 		    <div class="form-group col">
 	    		<label class="topicos" for="CPF">CPF</label>
-	    		<input type="text" class="form-control" id="CPF" placeholder="123.456.789-12">
+	    		<input required type="text" class="form-control" id="CPF" placeholder="123.456.789-12">
 	  		</div>
     	</div>
 
     	<div class="row">
     		<div class="form-group col-sm-6 col-12">
 	    		<label class="topicos" for="Nascimento">Data de Nascimento</label>
-	    		<input type="date" class="form-control" id="Nascimento" placeholder="dd/mm/aaaa">
+	    		<input required type="date" class="form-control" id="Nascimento" placeholder="dd/mm/aaaa">
 	  		</div>
     		<div class="form-group col-sm-3 col-12">
 	    		<label class="topicos" for="ufRG">UF</label>
-	    		<select id="ufRG" class="form-control">
-	    			<option selected>---</option>
-	    			<option>AC</option>
-	    			<option>AL</option>
-	    			<option>AP</option>
-	    			<option>AM</option>
-	    			<option>BA</option>
-	    			<option>CE</option>
-	    			<option>DF</option>
-	    			<option>ES</option>
-	    			<option>GO</option>
-	    			<option>MA</option>
-	    			<option>MT</option>
-	    			<option>MS</option>
-	    			<option>MG</option>
-	    			<option>PA</option>
-	    			<option>PB</option>
-	    			<option>PR</option>
-	    			<option>PR</option>
-	    			<option>PE</option>
-	    			<option>PI</option>
-	    			<option>RJ</option>
-	    			<option>RN</option>
-	    			<option>RS</option>
-	    			<option>RO</option>
-	    			<option>RR</option>
-	    			<option>SC</option>
-	    			<option>SP</option>
-	    			<option>SE</option>
-	    			<option>TO</option>
+	    		<select required id="ufRG" class="form-control">
+	    			<option value="" selected>---</option>
+	    			<option value="">AC</option>
+	    			<option value="">AL</option>
+	    			<option value="">AP</option>
+	    			<option value="">AM</option>
+	    			<option value="">BA</option>
+	    			<option value="">CE</option>
+	    			<option value="">DF</option>
+	    			<option value="">ES</option>
+	    			<option value="">GO</option>
+	    			<option value="">MA</option>
+	    			<option value="">MT</option>
+	    			<option value="">MS</option>
+	    			<option value="">MG</option>
+	    			<option value="">PA</option>
+	    			<option value="">PB</option>
+	    			<option value="">PR</option>
+	    			<option value="">PE</option>
+	    			<option value="">PI</option>
+	    			<option value="">RJ</option>
+	    			<option value="">RN</option>
+	    			<option value="">RS</option>
+	    			<option value="">RO</option>
+	    			<option value="">RR</option>
+	    			<option value="">SC</option>
+	    			<option value="">SP</option>
+	    			<option value="">SE</option>
+	    			<option value="">TO</option>
 	    		</select>
 	    	</div>
 	  		<div class="form-group col-sm-3 col-12">
 	    		<label class="topicos" for="RG">RG</label>
-	    		<input type="text" class="form-control" id="RG" placeholder="12.345.678">
+	    		<input required type="text" class="form-control" id="RG" placeholder="12.345.678">
 	  		</div>
     	</div>
 
     	<div class="row">
 	  		<div class="form-group col">
 	    		<label class="topicos" for="telefone">Telefone:</label>
-	    		<input type="text" class="form-control" id="telefone" placeholder="(DDD) (9) 1234-5678">
+	    		<input required type="text" class="form-control" id="telefone" placeholder="(DDD) (9) 1234-5678">
 			</div>
 			<div class="form-group col">
 	    		<label class="topicos" for="CEP">CEP:</label>
-	    		<input type="text" class="form-control" id="CEP" placeholder="12.345-678">
+	    		<input required type="text" class="form-control" id="CEP" placeholder="12.345-678">
 			</div>
 		</div>
 		<div class="row">
 			<div class="form-group col-12 col-sm-12">
 	    		<label class="topicos" for="Cidade">Cidade:</label>
-	    		<input type="text" class="form-control " id="Cidade" placeholder="Lavras">
+	    		<input required type="text" class="form-control " id="Cidade" placeholder="Lavras">
 	  		</div>
 			<div class="form-group col-12 col-sm-6">
 	    		<label class="topicos" for="Logradouro">Endereço:</label>
-	    		<input type="text" class="form-control" id="Logradouro" placeholder="Rua dos Alfineiros">
+	    		<input required type="text" class="form-control" id="Logradouro" placeholder="Rua dos Alfineiros">
 	  		</div>
 	  		<div class="form-group col-12 col-sm-6">
 	    		<label class="topicos" for="Numero">Número:</label>
-	    		<input type="text" class="form-control" id="Numero" placeholder="4">
+	    		<input required type="text" class="form-control" id="Numero" placeholder="4">
 	  		</div>
 	  		<div class="form-group col-12 col-sm-6">
 	    		<label class="topicos" for="Complemento">Complemento:</label>
@@ -357,7 +357,7 @@
 	  		</div>
 	  		<div class="form-group col-12 col-sm-6">
 	    		<label class="topicos" for="Bairro">Bairro:</label>
-	    		<input type="text" class="form-control" id="Bairro" placeholder="Centro">
+	    		<input required type="text" class="form-control" id="Bairro" placeholder="Centro">
 	  		</div>
   		</div>
   			<button type="submit" class="btn btn-primary logBotao">Cadastrar</button>
