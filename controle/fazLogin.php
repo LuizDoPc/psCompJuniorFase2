@@ -5,19 +5,21 @@ function __autoload($class_name){
     require_once '../modelo/'.$class_name.'.php';
 }
 
-$email = $_POST['email'];
-$senha = $_POST['senha'];
+$email = $_POST['Emaillogin'];
+$senha = $_POST['Senhalogin'];
 
 $l = new Login();
 
-if($l->login($email, $senha)){
-    echo '1';
-    setcookie("login",$email);
+$p = new Participantes();
+$res = $p->findEmail($email);
 
-    //if(isset($_COOKIE['login']))
+session_start();
+
+if($l->fazLogin($email, $senha)){
+    $_SESSION['cpf'] = $res->CPF;
+    header('Location: ../visao/inscrito.php');
 }else{
-    echo '0';
-    unset($_SESSION['email']);
-    unset($_SESSION['senha']);
+    unset($_SESSION['cpf']);
+    header('Location: ../visao/index.php');
 }
 

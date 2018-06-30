@@ -1,14 +1,14 @@
 <?php
 require_once 'Crud.php';
 
-class Estado extends Crud{
+class Login{
 
     protected $table = 'Login';
     private $id;
     private $Email;
     private $Senha;
 
-    public function login($email, $senha){
+    public function fazLogin($email, $senha){
         $query = 'SELECT Senha FROM Login
                     WHERE Email = :e;';
 
@@ -16,8 +16,7 @@ class Estado extends Crud{
             $stmt->bindParam(':e', $email);
             $stmt->execute();
             $result = $stmt->fetch();
-
-            if(crypt($senha, $result->Senha) == $result->Senha){
+            if($result and crypt($senha, $result->Senha) == $result->Senha){
                 return true;
             }else{
                 return false;

@@ -9,7 +9,7 @@ $nome = $_POST['Nome'];
 $cpf = $_POST['CPF'];
 $rg = $_POST['RG'];
 $ufrg = $_POST['ufRG'];
-$telefone = $_POST['telefone'];
+$telefone = $_POST['Telefone'];
 $email = $_POST['Email'];
 $logradouro = $_POST['Logradouro'];
 $numero = $_POST['Numero'];
@@ -17,12 +17,12 @@ $bairro = $_POST['Bairro'];
 $cep = $_POST['CEP'];
 $complemento = $_POST['Complemento'];
 $nasc = $_POST['Nascimento'];
-$insc = $_POST['Inscrito'];
-$estado = $_POST['Estado'];
-$cidade = $_POST['Cidade'];
+$insc = false;
+$estado = new Estado($_POST['Estado']);
+$cidade = new Cidade($_POST['Cidade']);
 
 
-$p = new Participante();
+$p = new Participantes();
 
 $p->setNome($nome);
 $p->setRG($rg);
@@ -40,3 +40,5 @@ $p->setEstadoIdEstado($estado);
 $p->setCidadeIdCidade($cidade);
 
 $p->update($cpf);
+
+header('Location: ../visao/inscrito.php');

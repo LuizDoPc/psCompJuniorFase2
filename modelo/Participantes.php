@@ -144,18 +144,12 @@ class Participantes extends Crud {
         $stmt->execute();
         return $stmt->fetch();
     }
-    public function findCPF($cpf, $ob, $cd){
-        if(($ob == 'Nome' || $ob == 'CPF' || $ob == 'TelefoneFixo' || $ob == 'TelefoneCelular') && ($cd == 'ASC' || $cd == 'DESC'))
-            $query = 'SELECT * FROM Participantes WHERE Participantes.CPF like :cpf ORDER BY :ob :cd';
-        else
-            $query = 'SELECT * FROM Participantes WHERE Participantes.CPF like :cpf';
+    public function findEmail($email){
+        $query = 'SELECT * FROM Participantes WHERE Email = :e';
         $stmt = DB::prepare($query);
-        $cpf = "%".$cpf."%";
-        $stmt->bindParam(':cpf', $cpf);
-        $stmt->bindParam(':ob', $ob);
-        $stmt->bindParam(':cd', $cd);
+        $stmt->bindParam(':e', $email);
         $stmt->execute();
-        return $stmt->fetchAll();
+        return $stmt->fetch();
     }
     public function findNome($nome, $ob, $cd){
         if(($ob == 'Nome' || $ob == 'CPF' || $ob == 'TelefoneFixo' || $ob == 'TelefoneCelular') && ($cd == 'ASC' || $cd == 'DESC'))

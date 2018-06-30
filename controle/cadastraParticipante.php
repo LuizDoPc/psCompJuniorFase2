@@ -17,15 +17,15 @@ $bairro = $_POST['Bairro'];
 $cep = $_POST['CEP'];
 $complemento = $_POST['Complemento'];
 $nasc = $_POST['Nascimento'];
-$insc = $_POST['Inscrito'];
-$estado = $_POST['Estado'];
-$cidade = $_POST['Cidade'];
+$insc = 0;
+$estado = new Estado($_POST['Estado']);
+$cidade = new Cidade($_POST['Cidade']);
 $senha = $_POST['Senha'];
 
 $senha = crypt($senha);
 
 
-$p = new Participante();
+$p = new Participantes();
 
 $p->setNome($nome);
 $p->setCPF($cpf);

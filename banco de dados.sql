@@ -5,9 +5,6 @@ SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 
 -- -----------------------------------------------------
--- Schema mydb
--- -----------------------------------------------------
--- -----------------------------------------------------
 -- Schema pscompjuniorfase2
 -- -----------------------------------------------------
 
@@ -65,26 +62,43 @@ CREATE TABLE IF NOT EXISTS `pscompjuniorfase2`.`participantes` (
   `Complemento` VARCHAR(45) NOT NULL,
   `CEP` VARCHAR(10) NOT NULL,
   `Inscrito` TINYINT NOT NULL,
-  `idEstado` INT(11) NOT NULL,
-  `idCidade` INT(11) NOT NULL,
-  PRIMARY KEY (`CPF`),
+  `Estado_idEstado` INT(11) NOT NULL,
+  `Cidade_idCidade` INT(11) NOT NULL,
+  PRIMARY KEY (`CPF`, `Email`),
   UNIQUE INDEX `cpf_UNIQUE` (`CPF` ASC),
   UNIQUE INDEX `rg_UNIQUE` (`RG` ASC),
   UNIQUE INDEX `email_UNIQUE` (`Email` ASC),
-  INDEX `fk_participantes_estado1_idx` (`idEstado` ASC),
-  INDEX `fk_participantes_cidade1_idx` (`idCidade` ASC),
+  INDEX `fk_participantes_estado1_idx` (`Estado_idEstado` ASC),
+  INDEX `fk_participantes_cidade1_idx` (`Cidade_idCidade` ASC),
   CONSTRAINT `fk_participantes_cidade1`
-    FOREIGN KEY (`idCidade`)
+    FOREIGN KEY (`Cidade_idCidade`)
     REFERENCES `pscompjuniorfase2`.`cidade` (`idCidade`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_participantes_estado1`
-    FOREIGN KEY (`idEstado`)
+    FOREIGN KEY (`Estado_idEstado`)
     REFERENCES `pscompjuniorfase2`.`estado` (`idEstado`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `pscompjuniorfase2`.`login`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `pscompjuniorfase2`.`login` (
+  `idlogin` INT NOT NULL,
+  `Senha` VARCHAR(45) NULL,
+  `Email` VARCHAR(100) NOT NULL,
+  PRIMARY KEY (`idlogin`),
+  INDEX `fk_login_participantes1_idx` (`Email` ASC),
+  CONSTRAINT `fk_login_participantes1`
+    FOREIGN KEY (`Email`)
+    REFERENCES `pscompjuniorfase2`.`participantes` (`Email`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
 
 
 SET SQL_MODE=@OLD_SQL_MODE;
