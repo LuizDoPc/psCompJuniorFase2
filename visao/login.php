@@ -194,17 +194,17 @@ input[type=submit]:hover {
 					Login
 				</div>
 				<div id="campos" class="container">
-					<form class="container">
+					<form class="container" action="../controle/fazLogin.php" method="post">
 						<div class="row">
 					  		<div class="form-group col-12">
-					    		<label class="topicos" for="Email">Email:</label>
-					    		<input required type="email" class="form-control" id="Email" placeholder="nome@exemplo.com">
+					    		<label class="topicos" for="Emaillogin">Email:</label>
+					    		<input required type="email" class="form-control" id="Emaillogin" name="Emaillogin" placeholder="nome@exemplo.com">
 							</div>
 							<div class="form-group col-12">
-					    		<label class="topicos" for="formGroupExampleInput">Senha:</label>
-					    		<input required type="password" class="form-control" id="formGroupExampleInput" placeholder="Insira sua Senha aqui">
+					    		<label class="topicos" for="Senhalogin">Senha:</label>
+					    		<input required type="password" class="form-control" id="Senhalogin" name="Senhalogin" placeholder="Insira sua Senha aqui">
 							</div>
-							<button type="submit" class="btn btn-primary logBotao"><a href="file:///C:/Users/Edson/Desktop/inscrito.html?"><a>Entrar</a></button>
+							<button type="submit" class="btn btn-primary logBotao">Logar</button>
 						</div>
 					</form>
 				</div>
@@ -212,10 +212,7 @@ input[type=submit]:hover {
 				  <div class="row">
 				    <div id="signup" class="col-12">
 				      <a href="#" style="color:white" class="btn bottomBtn col-12">Sign up</a>
-				    </div>
-				    <div id="forgot" class="col-12">
-				      <a href="#" style="color:white" class="btn bottomBtn col-12">Forgot password?</a>
-				    </div>
+						</div>
 				  </div>
 				</div>
 			</div>
