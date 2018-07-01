@@ -45,7 +45,8 @@ function cadastraParticipante(){
         Cidade: $('#Cidade').val(),
         Senha: $('#Senha').val()
         }, function(res){
-            //$('#cadastro').clear();
+            $('#cadastro').trigger('reset');
+            alert('cadastrado');
         });
     }else{
         alert('erro');

@@ -32,6 +32,18 @@ $user = new Participantes($_SESSION['cpf']);
 		<form action="../controle/deslogar.php">
 			<button type="submit">Deslogar</button>
 		</form>
+		<?php
+			if($user->getInscrito()){
+				echo "<div>INSCRIÇÃO CONFIRMADA</div>";
+			}else{
+				echo '
+				<form action="../controle/inscrever.php" method="post">
+					<input type="hidden" name="cpf" value="'.$user->getCPF().'">
+					<button type="submit">Confirmar inscrição</button>
+				</form>';
+			}
+
+		?>
 		<div id="usuario">
 			<div class="row">
 				<p class="col-12 col-sm-9">
@@ -130,19 +142,21 @@ $user = new Participantes($_SESSION['cpf']);
 
 			<div class="form-group col-12 col-sm-6">
 				<label class="topicos" for="ufRG">Cidade:</label>
-	    		<select id="Cidade" name="Cidade" class="form-control">
-					<?php
-						$c = new Cidade();
-						$res = $c->findEst($user->getEstadoIdEstado()->getIdEstado());
-						foreach($res as $r){
-							if($r->idCidade == $user->getCidadeIdCidade()->getIdCidade()){
-								echo '<option selected value="'.$r->idCidade.'">'.$r->Nome.'</option>';
-							}else{
-								echo '<option value="'.$r->idCidade.'">'.$r->Nome.'</option>';
+	    		<div id="resposta">
+					<select id="Cidade" name="Cidade" class="form-control">
+						<?php
+							$c = new Cidade();
+							$res = $c->findEst($user->getEstadoIdEstado()->getIdEstado());
+							foreach($res as $r){
+								if($r->idCidade == $user->getCidadeIdCidade()->getIdCidade()){
+									echo '<option selected value="'.$r->idCidade.'">'.$r->Nome.'</option>';
+								}else{
+									echo '<option value="'.$r->idCidade.'">'.$r->Nome.'</option>';
+								}
 							}
-						}
-					?>
-	    		</select>
+						?>
+					</select>
+				</div>
 			</div>
 	  	</div>
   		<button type="submit" class="btn btn-primary logBotao">Editar Dados</button>
@@ -152,5 +166,16 @@ $user = new Participantes($_SESSION['cpf']);
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$('#Estado').on('change', function(){
+			$.post(
+				'../controle/retornaCidades.php',
+				{uf:$('#Estado').val()},
+				function(res){
+					$('#resposta').html(res);
+				}
+			);
+		});
+	</script>
 </body>
 </html>
