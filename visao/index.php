@@ -54,10 +54,10 @@ function __autoload($class_name){
 				<div class="row">
 					<div class="navText">Faça seu Log-in</div>
 	  				<div class="form-group col">
-							<input type="email" class="form-control logBars" placeholder="Email" id="Emaillogin" name="Emaillogin">
+							<input required type="email" class="form-control logBars" placeholder="Email" id="Emaillogin" name="Emaillogin">
 					</div>
 					<div class="form-group col">
-	    				<input type="password" class="form-control logBars" placeholder="Senha" id="Senhalogin" name="Senhalogin">
+	    				<input required type="password" class="form-control logBars" placeholder="Senha" id="Senhalogin" name="Senhalogin">
 					</div>
 					<div>
 						<button type="submit" class="btn btn-primary logBars">Tentar Entrar</button>
@@ -177,9 +177,9 @@ function __autoload($class_name){
       Alisson Gonçalves
     </div>
     <div class="social">
-      <a href="https://www.facebook.com/alisson.rodrigo.549" target="_blank"><img src="assets/images/icon1 (2).svg" class="socialIcon"></a>
-      <a href="https://github.com/AlissonRoGon/" target="_blank"><img src="assets/images/icon2 (2).svg" class="socialIcon"></a>
-      <a href="https://www.instagram.com/alisson_rogon/" target="_blank"><img src="assets/images/icon3 (2).svg" class="socialIcon"></a>
+      <a href="https://www.facebook.com/alisson.rodrigo.549" target="_blank"><img src="assets/images/icon1.svg" class="socialIcon"></a>
+      <a href="https://github.com/AlissonRoGon/" target="_blank"><img src="assets/images/icon2.svg" class="socialIcon"></a>
+      <a href="https://www.instagram.com/alisson_rogon/" target="_blank"><img src="assets/images/icon3.svg" class="socialIcon"></a>
     </div>
   </div>
 
@@ -191,9 +191,9 @@ function __autoload($class_name){
         Bruno Abreu
       </div>
       <div class="social">
-		<a href="https://www.facebook.com/brunorezabreu" target="_blank"><img src="assets/images/icon1 (2).svg" class="socialIcon"></a>
-        <a href="https://github.com/brunorezabreu" target="_blank"><img src="assets/images/icon2 (2).svg" class="socialIcon"></a>
-        <a href="https://www.instagram.com/brunorabreu/?hl=pt-br" target="_blank"><img src="assets/images/icon3 (2).svg" class="socialIcon"></a>
+		<a href="https://www.facebook.com/brunorezabreu" target="_blank"><img src="assets/images/icon1.svg" class="socialIcon"></a>
+        <a href="https://github.com/brunorezabreu" target="_blank"><img src="assets/images/icon2.svg" class="socialIcon"></a>
+        <a href="https://www.instagram.com/brunorabreu/?hl=pt-br" target="_blank"><img src="assets/images/icon3.svg" class="socialIcon"></a>
     </div>
   </div>
 
@@ -208,9 +208,9 @@ function __autoload($class_name){
         João Veronezi
       </div>
       <div class="social">
-      	<a href="https://www.facebook.com/profile.php?id=100002731789283&ref=br_rs" target="_blank"><img src="assets/images/icon1 (2).svg" class="socialIcon"></a>
-        <a href="https://github.com/joaoveronezi/" target="_blank"><img src="assets/images/icon2 (2).svg" class="socialIcon"></a>
-        <a href="https://www.instagram.com/jvveronezi/?hl=pt-br" target="_blank"><img src="assets/images/icon3 (2).svg" class="socialIcon"></a>
+      	<a href="https://www.facebook.com/profile.php?id=100002731789283&ref=br_rs" target="_blank"><img src="assets/images/icon1.svg" class="socialIcon"></a>
+        <a href="https://github.com/joaoveronezi/" target="_blank"><img src="assets/images/icon2.svg" class="socialIcon"></a>
+        <a href="https://www.instagram.com/jvveronezi/?hl=pt-br" target="_blank"><img src="assets/images/icon3.svg" class="socialIcon"></a>
       </div>
     </div>
 
@@ -222,9 +222,9 @@ function __autoload($class_name){
         Luiz Soares
       </div>
       <div class="social">
-        <a href="http://facebook.com/minerador" target="_blank"><img src="assets/images/icon1 (2).svg" class="socialIcon"></a>
-        <a href="https://github.com/LuizDoPc" target="_blank"><img src="assets/images/icon2 (2).svg" class="socialIcon"></a>
-        <a href="http://instagram.com/luizdopc" target="_blank"><img src="assets/images/icon3 (2).svg" class="socialIcon"></a>
+        <a href="http://facebook.com/minerador" target="_blank"><img src="assets/images/icon1.svg" class="socialIcon"></a>
+        <a href="https://github.com/LuizDoPc" target="_blank"><img src="assets/images/icon2.svg" class="socialIcon"></a>
+        <a href="http://instagram.com/luizdopc" target="_blank"><img src="assets/images/icon3.svg" class="socialIcon"></a>
       </div>
     </div>
 
@@ -236,9 +236,9 @@ function __autoload($class_name){
         Marcos José	
       </div>
       <div class="social">
-        <a href="https://www.facebook.com/profile.php?id=100003215395786&ref=br_rs" target="_blank"><img src="assets/images/icon1 (2).svg" class="socialIcon"></a>
-        <a href="https://github.com/dodoreptil" target="_blank"><img src="assets/images/icon2 (2).svg" class="socialIcon"></a>
-        <a href="https://www.instagram.com/dodoreptil/?hl=pt-br" target="_blank"><img src="assets/images/icon3 (2).svg" class="socialIcon"></a>
+        <a href="https://www.facebook.com/profile.php?id=100003215395786&ref=br_rs" target="_blank"><img src="assets/images/icon1.svg" class="socialIcon"></a>
+        <a href="https://github.com/dodoreptil" target="_blank"><img src="assets/images/icon2.svg" class="socialIcon"></a>
+        <a href="https://www.instagram.com/dodoreptil/?hl=pt-br" target="_blank"><img src="assets/images/icon3.svg" class="socialIcon"></a>
       </div>
     </div>
 
@@ -261,24 +261,24 @@ function __autoload($class_name){
 	<form class="container-fluid" id="cadastrinho">
 		<div class="form-group">
     		<label class="topicos" for="Nome">Nome:</label>
-    		<input  type="text" class="form-control dados" id="Nome" placeholder="Maria da Silva">
+    		<input required type="text" class="form-control dados" id="Nome" placeholder="Maria da Silva">
   		</div>
 
   		<div class="row">
 	  		<div class="form-group col">
 	    		<label class="topicos" for="Email">Email:</label>
-	    		<input  type="email" class="form-control" id="Email" placeholder="nome@exemplo.com">
+	    		<input required type="email" class="form-control" id="Email" placeholder="nome@exemplo.com">
 			</div>
 			<div class="form-group col">
 	    		<label class="topicos">Senha:</label>
-	    		<input  type="password" class="form-control" placeholder="Insira sua Senha aqui" id="Senha">
+	    		<input required type="password" class="form-control" placeholder="Insira sua Senha aqui" id="Senha">
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="form-group col">
 	    		<label class="topicos" for="Sexo">Sexo</label>
-	    		<select  id="Sexo" class="form-control">
+	    		<select required id="Sexo" class="form-control">
 	    			<option value="" selected>---</option>
 	    			<option>Feminino</option>
 	    			<option>Masculino</option>
@@ -287,18 +287,18 @@ function __autoload($class_name){
 	    	</div>
 		    <div class="form-group col">
 	    		<label class="topicos" for="CPF">CPF</label>
-	    		<input  type="text" class="form-control" id="CPF" placeholder="123.456.789-12">
+	    		<input required type="text" class="form-control" id="CPF" placeholder="123.456.789-12">
 	  		</div>
     	</div>
 
     	<div class="row">
     		<div class="form-group col-sm-6 col-12">
 	    		<label class="topicos" for="Nascimento">Data de Nascimento</label>
-	    		<input  type="date" class="form-control" id="Nascimento" placeholder="dd/mm/aaaa">
+	    		<input required type="date" class="form-control" id="Nascimento" placeholder="dd/mm/aaaa">
 	  		</div>
     		<div class="form-group col-sm-3 col-12">
 	    		<label class="topicos" for="ufRG">ufRG</label>
-	    		<select  id="ufRG" class="form-control">
+	    		<select required id="ufRG" class="form-control">
 						<?php
 							$e = new Estado();
 							$res = $e->findAll();
@@ -310,38 +310,24 @@ function __autoload($class_name){
 	    	</div>
 	  		<div class="form-group col-sm-3 col-12">
 	    		<label class="topicos" for="RG">RG</label>
-	    		<input  type="text" class="form-control" id="RG" placeholder="12.345.678">
+	    		<input required type="text" class="form-control" id="RG" placeholder="12.345.678">
 	  		</div>
     	</div>
 
     	<div class="row">
 	  		<div class="form-group col">
 	    		<label class="topicos" for="telefone">Telefone:</label>
-	    		<input  type="text" class="form-control" id="Telefone" placeholder="(DDD) (9) 1234-5678">
+	    		<input required type="text" class="form-control" id="Telefone" placeholder="(DDD) (9) 1234-5678">
 			</div>
 			<div class="form-group col">
 	    		<label class="topicos" for="CEP">CEP:</label>
-	    		<input  type="text" class="form-control" id="CEP" placeholder="12.345-678">
+	    		<input required type="text" class="form-control" id="CEP" placeholder="12.345-678">
 			</div>
 		</div>
 		<div class="row">
-			<div class="form-group col-6 col-sm-12">
-	    		<label class="topicos" for="Cidade">Cidade:</label>
-					<div id="resposta">
-						<select name="Cidade" id="Cidade" class="form-control">
-							<?php
-								$c = new Cidade();
-								$res = $c->findEst(26);
-								foreach($res as $r){
-									echo '<option value="'.$r->idCidade.'">'.$r->Nome.'</option>';
-								}
-							?>
-						</select>
-					</div>
-			</div>
 			<div class="col-6 col-sm-12 form-group">
 				<label class="topicos" for="Estado">Estado:</label>
-				<select  id="Estado" class="form-control">
+				<select required id="Estado" class="form-control">
 						<?php
 							$e = new Estado();
 							$res = $e->findAll();
@@ -349,15 +335,29 @@ function __autoload($class_name){
 								echo '<option value="'.$r->idEstado.'">'.$r->UF.'</option>';
 							}
 						?>
-	    	</select>
+	    		</select>
+			</div>
+			<div class="form-group col-6 col-sm-12">
+	    		<label class="topicos" for="Cidade">Cidade:</label>
+				<div id="resposta">
+					<select required name="Cidade" id="Cidade" class="form-control">
+						<?php
+							$c = new Cidade();
+							$res = $c->findEst(26);
+							foreach($res as $r){
+								echo '<option value="'.$r->idCidade.'">'.$r->Nome.'</option>';
+							}
+						?>
+					</select>
+				</div>
 			</div>
 			<div class="form-group col-12 col-sm-6">
 	    		<label class="topicos" for="Logradouro">Endereço:</label>
-	    		<input  type="text" class="form-control" id="Logradouro" placeholder="Rua dos Alfineiros">
+	    		<input required type="text" class="form-control" id="Logradouro" placeholder="Rua dos Alfineiros">
 	  		</div>
 	  		<div class="form-group col-12 col-sm-6">
 	    		<label class="topicos" for="Numero">Número:</label>
-	    		<input  type="text" class="form-control" id="Numero" placeholder="4">
+	    		<input required type="text" class="form-control" id="Numero" placeholder="4">
 	  		</div>
 	  		<div class="form-group col-12 col-sm-6">
 	    		<label class="topicos" for="Complemento">Complemento:</label>
@@ -365,7 +365,7 @@ function __autoload($class_name){
 	  		</div>
 	  		<div class="form-group col-12 col-sm-6">
 	    		<label class="topicos" for="Bairro">Bairro:</label>
-	    		<input  type="text" class="form-control" id="Bairro" placeholder="Centro">
+	    		<input required type="text" class="form-control" id="Bairro" placeholder="Centro">
 	  		</div>
   		</div>
   			<button type="submit" class="btn btn-primary logBotao">Cadastrar</button>
@@ -406,10 +406,7 @@ function __autoload($class_name){
 				e.preventDefault();
 				cadastraParticipante();
 			});
-			
-			
 		});
-
 	</script>
 </body>
 </html>

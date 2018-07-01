@@ -14,33 +14,29 @@ div{
 }
 
 #areaInscrito{
-	background-color: #f1f2eb;
-	height: 100%;
-	width: auto;
-	padding-bottom: 1em;
+  background-color: #f1f2eb;
+  height: 100%;
+  width: auto;
+  padding-bottom: 1em;
 }
 #topTitle{
-	padding-top: 0.2em;
-	font-size: 3em;
-	color: #0F0A0A;
-	text-align: center;
+  padding-top: 0.2em;
+  font-size: 3em;
+  color: #0F0A0A;
+  text-align: center;
 }
 #usuario{
-	margin-left: auto;
-	margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
-#avatar{
-	height: 8em;
-	width: auto;
-	border-radius: 50%;
-  margin-bottom: 1em;
-	color: #0F0A0A;
+#sair{
+  float: right;
 }
 
 p{
-	margin-right: auto;
-	margin-left: auto; 
-	font-size: 2em!important;
+  margin-right: auto;
+  margin-left: auto; 
+  font-size: 2em!important;
 }
 
 .col-9 {
@@ -59,13 +55,13 @@ p{
 }
 
 @media(max-width: 2000px){
-	#usuario{
+  #usuario{
     margin-left: 11em;
     margin-right: 11em;
   }
 }
 @media(max-width: 768px){
-	#usuario{
+  #usuario{
     margin-left: 7em;
     margin-right: 7em;
   }
@@ -74,7 +70,7 @@ p{
   }
 }
 @media(max-width: 425px){
-	#usuario{
+  #usuario{
     margin-left: 2.5em;
     margin-right: 2.5em;
   }

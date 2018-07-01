@@ -29,21 +29,6 @@ $user = new Participantes($_SESSION['cpf']);
 	<section id="areaInscrito">
 
 		<div id="topTitle">Área do Inscrito</div>
-		<form action="../controle/deslogar.php">
-			<button type="submit">Deslogar</button>
-		</form>
-		<?php
-			if($user->getInscrito()){
-				echo "<div>INSCRIÇÃO CONFIRMADA</div>";
-			}else{
-				echo '
-				<form action="../controle/inscrever.php" method="post">
-					<input type="hidden" name="cpf" value="'.$user->getCPF().'">
-					<button type="submit">Confirmar inscrição</button>
-				</form>';
-			}
-
-		?>
 		<div id="usuario">
 			<div class="row">
 				<p class="col-12 col-sm-9">
@@ -159,7 +144,18 @@ $user = new Participantes($_SESSION['cpf']);
 				</div>
 			</div>
 	  	</div>
-  		<button type="submit" class="btn btn-primary logBotao">Editar Dados</button>
+	  	<?php
+			if($user->getInscrito()){
+				echo "<div>INSCRIÇÃO CONFIRMADA</div>";
+			}else{
+				echo '
+					<input type="hidden" name="cpf" value="'.$user->getCPF().'">
+					<button type="submit" class="btn btn-primary logBotao">Confirmar Inscrição</button>
+			}
+		?>
+  		<button type="submit" class="btn btn-primary logBotao">Confirmar Edição de Dados</button>
+		<button type="submit" id="sair" class="btn btn-primary logBotao">Sair da Conta</button>
+		
 	</form>
 </div>
 	</section>
