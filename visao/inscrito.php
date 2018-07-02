@@ -144,19 +144,25 @@ $user = new Participantes($_SESSION['cpf']);
 				</div>
 			</div>
 	  	</div>
-	  	<?php
-			if($user->getInscrito()){
-				echo "<div>INSCRIÇÃO CONFIRMADA</div>";
-			}else{
-				echo '
+		<button type="submit" class="btn btn-primary logBotao">Confirmar Edição de Dados</button>
+	</form>
+	<?php
+		if($user->getInscrito()){
+			echo "<div>INSCRIÇÃO CONFIRMADA</div>";
+		}else{
+			echo '
+				<form action="../controle/inscrever.php" method="post">
 					<input type="hidden" name="cpf" value="'.$user->getCPF().'">
 					<button type="submit" class="btn btn-primary logBotao">Confirmar Inscrição</button>
-			}
-		?>
-  		<button type="submit" class="btn btn-primary logBotao">Confirmar Edição de Dados</button>
-		<button type="submit" id="sair" class="btn btn-primary logBotao">Sair da Conta</button>
-		
+				</form>';
+		}
+	?>
+	<form action="../controle/deslogar.php">
+	<button type="submit" id="sair" class="btn btn-primary logBotao">Sair da Conta</button>
 	</form>
+	
+		
+	
 </div>
 	</section>
 
