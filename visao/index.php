@@ -150,11 +150,11 @@ function __autoload($class_name){
 			<div class="col-xl-12 cont">
 				<img src="assets/images/palestrantes3.jpg" class="imgPalestrantes">
 				<div class="overlay imgPalestrantes" align="center">
-				    <p class="text">Membro Efetivo/Tester</p>
+				    <p class="text">Membro Efetivo/ Desenvolvedor</p>
   				</div>
 			</div>
 			<p class="txtPalestrantes col-12">
-				Bruno Jahel
+				Gustavo Reis
 			</p>
 		</div>
 
@@ -216,7 +216,7 @@ function __autoload($class_name){
 
     <div id="colOrganizadores" class="col-sm-12 col-md-4 row">
       <div class="col-xl-12">
-        <img src="assets/images/organizadores4.jpe	g" class="imgOrganizadores">
+        <img src="assets/images/organizadores4.jpeg" class="imgOrganizadores">
       </div>
       <div class="txtOrganizadores col-12">
         Luiz Soares
